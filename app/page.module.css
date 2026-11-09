@@ -400,3 +400,32 @@
     transition: none;
   }
 }
+
+
+
+
+/* Тонкие SVG-стрелки */
+
+.arrowIcon {
+  display: inline-block;
+  flex: 0 0 auto;
+  width: 17px;
+  height: 17px;
+  vertical-align: middle;
+  transition: transform 0.25s ease;
+}
+
+/* Небольшое движение стрелки при наведении */
+
+.button:hover .arrowIcon,
+.textLink:hover .arrowIcon {
+  transform: translate(3px, -3px);
+}
+
+/* Стрелка в блоке новых знакомств */
+
+.featureIcon .arrowIcon {
+  width: 27px;
+  height: 27px;
+  color: #b48a4c;
+}

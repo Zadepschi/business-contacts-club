@@ -6,6 +6,44 @@ const facebookUrl =
   process.env.NEXT_PUBLIC_FACEBOOK_GROUP_URL ||
   "https://www.facebook.com/groups/1549833390202202";
 
+function ArrowUpRight() {
+  return (
+    <svg
+      className={styles.arrowIcon}
+      viewBox="0 0 24 24"
+      fill="none"
+      aria-hidden="true"
+    >
+      <path
+        d="M5 19L19 5M8 5H19V16"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+function ArrowRight() {
+  return (
+    <svg
+      className={styles.arrowIcon}
+      viewBox="0 0 24 24"
+      fill="none"
+      aria-hidden="true"
+    >
+      <path
+        d="M4 12H20M13 5L20 12L13 19"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
 export default function HomePage() {
   return (
     <>
@@ -33,7 +71,7 @@ export default function HomePage() {
               className={`${styles.button} ${styles.buttonGold}`}
               href="/about"
             >
-              Узнать о клубе <span>↗</span>
+              Узнать о клубе <ArrowUpRight />
             </Link>
 
             <a
@@ -42,7 +80,7 @@ export default function HomePage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Группа в Facebook <span>↗</span>
+              Группа в Facebook <ArrowUpRight />
             </a>
           </div>
         </div>
@@ -55,7 +93,9 @@ export default function HomePage() {
       <section className={styles.introStrip}>
         <div className={`container ${styles.introGrid}`}>
           <div className={styles.feature}>
-            <span className={styles.featureIcon}>↗</span>
+            <span className={styles.featureIcon}>
+              <ArrowUpRight />
+            </span>
             <strong>Новые знакомства</strong>
             <small>Расширяем круг деловых контактов</small>
           </div>
@@ -97,7 +137,7 @@ export default function HomePage() {
               className={styles.textLink}
               href="/about"
             >
-              Больше о наших встречах <span>→</span>
+              Больше о наших встречах <ArrowRight />
             </Link>
           </div>
 
