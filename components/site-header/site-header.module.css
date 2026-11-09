@@ -1,0 +1,242 @@
+
+/* ========================================
+   HEADER — ОСНОВНАЯ ШАПКА
+======================================== */
+
+.header {
+  position: relative;
+  z-index: 20;
+  width: 100%;
+  background: #0b1927;
+  border-bottom: 1px solid rgba(211, 164, 82, 0.45);
+}
+
+.inner {
+  width: min(1440px, calc(100% - 80px));
+  min-height: 112px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* ========================================
+   BRAND — ЛОГОТИП И НАЗВАНИЕ
+======================================== */
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.logo {
+  display: block;
+  width: 112px;
+  height: 82px;
+  object-fit: contain;
+}
+
+.divider {
+  display: block;
+  width: 1px;
+  height: 58px;
+
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    #d8ad62,
+    transparent
+  );
+}
+
+.brandName {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: -0.8px;
+  white-space: nowrap;
+
+  background: linear-gradient(
+    110deg,
+    #b58a43 10%,
+    #fff0c4 35%,
+    #d4a958 50%,
+    #fff0c4 65%,
+    #b58a43 90%
+  );
+
+  background-size: 220% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: goldShimmer 7s ease-in-out infinite;
+}
+
+/* Мягкий перелив золотого света */
+
+@keyframes goldShimmer {
+  0%, 100% {
+    background-position: 100% center;
+  }
+
+  50% {
+    background-position: 0% center;
+  }
+}
+
+/* ========================================
+   NAVIGATION — МЕНЮ
+======================================== */
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.nav a {
+  position: relative;
+  padding: 12px 0;
+
+  color: #f4f0e8;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+
+  transition:
+    color 0.3s ease,
+    font-weight 0.3s ease;
+}
+
+/* Золотая линия под пунктом меню */
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+
+  width: 0;
+  height: 2px;
+
+  background: linear-gradient(
+    90deg,
+    #b98535,
+    #f5d58d,
+    #b98535
+  );
+
+  transition: width 0.3s ease;
+}
+
+/* Наведение курсора */
+
+.nav a:hover {
+  color: #e5bd70;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+/* Активная страница */
+
+.nav a.active {
+  color: #e5bd70;
+  font-weight: 600;
+}
+
+.nav a.active::after {
+  width: 100%;
+}
+
+/* ========================================
+   TABLET — ПЛАНШЕТЫ
+======================================== */
+
+@media (max-width: 900px) {
+  .inner {
+    width: calc(100% - 40px);
+    min-height: 96px;
+    gap: 20px;
+  }
+
+  .logo {
+    width: 90px;
+    height: 70px;
+  }
+
+  .brandName {
+    font-size: 25px;
+  }
+
+  .nav {
+    gap: 24px;
+  }
+
+  .nav a {
+    font-size: 16px;
+  }
+}
+
+/* ========================================
+   MOBILE — ТЕЛЕФОНЫ
+======================================== */
+
+@media (max-width: 640px) {
+  .inner {
+    width: calc(100% - 28px);
+    padding: 14px 0;
+
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .brand {
+    gap: 12px;
+  }
+
+  .logo {
+    width: 76px;
+    height: 58px;
+  }
+
+  .divider {
+    height: 42px;
+  }
+
+  .brandName {
+    font-size: 24px;
+  }
+
+  .nav {
+    width: 100%;
+    justify-content: center;
+    gap: 26px;
+  }
+
+  .nav a {
+    font-size: 14px;
+  }
+}
+
+/* ========================================
+   ACCESSIBILITY — УМЕНЬШЕНИЕ АНИМАЦИИ
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .brandName {
+    animation: none;
+  }
+
+  .nav a,
+  .nav a::after {
+    transition: none;
+  }
+}

@@ -1,0 +1,227 @@
+
+.pageShell {
+  padding-top: 24px;
+}
+
+.joinPage {
+  padding-bottom: 0;
+}
+
+.pageHeading {
+  padding-bottom: 28px;
+}
+
+.pageHeading h1 {
+  margin-bottom: 14px;
+  font-size: clamp(44px, 5vw, 62px);
+}
+
+.pageLead {
+  max-width: 780px;
+  margin: 0;
+  color: #46515b;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* Этапы вступления */
+
+.joinSteps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding-bottom: 48px;
+}
+
+.joinStep {
+  display: flex;
+  gap: 16px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+
+.joinStep > span {
+  color: #b48a4c;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 27px;
+}
+
+.joinStep h2 {
+  margin: 2px 0 7px;
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.joinStep p {
+  margin: 0;
+  color: #515c66;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Правила клуба */
+
+.rulesPanel {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 34px;
+  padding: 30px;
+  margin-bottom: 48px;
+  background: var(--cream);
+  border: 1px solid var(--line);
+}
+
+.rulesPanel h2 {
+  margin-top: 0;
+}
+
+.rulesPanel ul {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding-left: 20px;
+  color: #3e4953;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.rulesPanel li::marker {
+  color: #b48a4c;
+}
+
+/* Нижний блок с Facebook */
+
+.joinCta {
+  padding: 52px 0;
+  color: white;
+  background:
+    linear-gradient(100deg, rgba(15, 25, 35, 0.97), rgba(15, 25, 35, 0.82)),
+    url("https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1800&q=85")
+    center / cover;
+}
+
+.joinCta h2 {
+  margin-bottom: 12px;
+  font-size: clamp(34px, 4vw, 48px);
+  line-height: 1.08;
+}
+
+
+
+/* Адаптация для планшетов */
+
+@media (max-width: 900px) {
+  .joinSteps {
+    gap: 18px;
+  }
+}
+
+/* Адаптация для телефонов */
+
+@media (max-width: 760px) {
+  .pageShell {
+    padding-top: 18px;
+  }
+
+  .pageHeading {
+    padding-bottom: 22px;
+  }
+
+  .pageHeading h1 {
+    font-size: clamp(40px, 10vw, 54px);
+  }
+
+  .pageLead {
+    font-size: 16px;
+  }
+
+  .joinSteps {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding-bottom: 34px;
+  }
+
+  .joinStep h2 {
+    font-size: 17px;
+  }
+
+  .joinStep p {
+    font-size: 15px;
+  }
+
+  .rulesPanel {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 22px;
+    margin-bottom: 34px;
+  }
+
+  .rulesPanel ul {
+    font-size: 15px;
+  }
+
+  .joinCta {
+    padding: 42px 0;
+  }
+
+  .joinCta h2 {
+    font-size: 34px;
+  }
+
+  .joinCtaInner > p:not(.eyebrow) {
+    font-size: 16px;
+  }
+}
+
+/* Золотая кнопка с движущимся бликом */
+
+.shimmerButton {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  color: #17202b !important;
+  background: linear-gradient(110deg, #bd9147, #f5dda7, #c99d50) !important;
+  border: 1px solid rgba(255, 235, 190, 0.8);
+}
+
+.shimmerButton::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -50%;
+  left: -60%;
+  width: 35%;
+  height: 200%;
+  transform: rotate(25deg);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.85),
+    transparent
+  );
+  animation: buttonShine 2.5s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.shimmerText {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes buttonShine {
+  0% {
+    left: -60%;
+  }
+
+  100% {
+    left: 130%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shimmerButton::before {
+    animation: none;
+  }
+}

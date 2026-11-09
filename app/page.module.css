@@ -1,0 +1,402 @@
+
+/* ГЛАВНЫЙ ЭКРАН */
+
+.hero {
+  position: relative;
+  min-height: 570px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  color: #fff;
+  background:
+    #202b38
+    url("https://images.unsplash.com/photo-1550909407-4144f2e6b459?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D")
+    center 48% / cover no-repeat;
+}
+
+.heroShade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(10, 17, 27, 0.91),
+    rgba(10, 17, 27, 0.68) 52%,
+    rgba(10, 17, 27, 0.28)
+  );
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  padding-block: 80px;
+}
+
+.eyebrow {
+  margin: 0 0 22px;
+  color: #e2c58e;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.hero h1 {
+  max-width: 700px;
+  margin: 0 0 22px;
+  color: #fffaf1;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(48px, 6vw, 78px);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+
+.heroLead {
+  max-width: 590px;
+  margin: 0 0 34px;
+  color: #f0eee9;
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+.button {
+  display: inline-flex;
+  min-height: 56px;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 0 26px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 700;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.3s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.buttonGold {
+  color: #17202b;
+  background: linear-gradient(
+    110deg,
+    #c9973e 0%,
+    #f8e4ad 25%,
+    #d5a64e 50%,
+    #fff0bd 75%,
+    #c9973e 100%
+  );
+  background-size: 250% 100%;
+  animation: goldShimmer 4s ease-in-out infinite;
+  box-shadow: 0 7px 22px rgba(0, 0, 0, 0.2);
+}
+
+.buttonGold:hover {
+  animation-duration: 1.5s;
+  box-shadow: 0 9px 28px rgba(213, 166, 78, 0.35);
+}
+
+@keyframes goldShimmer {
+  0% {
+    background-position: 100% 50%;
+  }
+
+  50% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .buttonGold {
+    animation: none;
+  }
+
+  .button,
+  .button:hover {
+    transition: none;
+    transform: none;
+  }
+}
+
+.buttonOutline {
+  color: #fff;
+  border: 1px solid rgba(226, 197, 142, 0.85);
+  background: rgba(10, 17, 27, 0.25);
+  box-shadow: 0 7px 22px rgba(0, 0, 0, 0.12);
+}
+
+.buttonOutline:hover {
+  color: #f5dba7;
+  border-color: #f0d08e;
+  background: rgba(197, 162, 104, 0.18);
+  box-shadow: 0 7px 24px rgba(213, 166, 78, 0.18);
+}
+
+.heroNote {
+  position: absolute;
+  right: max(32px, calc((100vw - 1160px) / 2));
+  bottom: 22px;
+  color: #f0e8da;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+}
+
+
+/* ПОЛОСА ПРЕИМУЩЕСТВ */
+
+.introStrip {
+  background: #f3f0e9;
+  border-bottom: 1px solid #ded8cc;
+}
+
+.introGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-block: 30px;
+}
+
+.feature {
+  display: grid;
+  justify-items: center;
+  gap: 7px;
+  padding: 12px 20px;
+  text-align: center;
+  border-right: 1px solid #ded8cc;
+}
+
+.feature:last-child {
+  border-right: 0;
+}
+
+.featureIcon {
+  color: #a77b3e;
+  font-size: 34px;
+  line-height: 1.2;
+}
+
+.feature strong {
+  color: #202b38;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.feature small {
+  color: #515b64;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+/* БЛОК ВСТРЕЧ */
+
+.homeMeetups {
+  padding: 65px 0;
+  color: #fff;
+  background:
+    linear-gradient(
+      100deg,
+      rgba(15, 25, 35, 0.97),
+      rgba(15, 25, 35, 0.84)
+    ),
+    url("https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=1800&q=85")
+    center / cover;
+}
+
+.homeMeetupsInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 42px;
+}
+
+.meetupsContent {
+  max-width: 700px;
+}
+
+.homeMeetups h2 {
+  margin: 0 0 18px;
+  color: #fffaf1;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(36px, 4vw, 52px);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.meetupsText {
+  max-width: 650px;
+  margin: 0 0 22px;
+  color: #e0e3e5;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.textLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #e2c58e;
+  font-size: 15px;
+  font-weight: 700;
+  transition: color 0.2s ease;
+}
+
+.textLink:hover {
+  color: #f5dfb7;
+}
+
+.meetupTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 300px;
+}
+
+.meetupTags span {
+  padding: 10px 16px;
+  border: 1px solid rgba(226, 197, 142, 0.55);
+  border-radius: 30px;
+  color: #f4e6ce;
+  font-size: 14px;
+}
+
+
+/* ПЛАНШЕТЫ */
+
+@media (max-width: 900px) {
+  .homeMeetupsInner {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 26px;
+  }
+
+  .meetupTags {
+    max-width: none;
+  }
+}
+
+
+/* ТЕЛЕФОНЫ */
+
+@media (max-width: 760px) {
+  .hero {
+    min-height: 500px;
+    background-position: 58% center;
+  }
+
+  .heroContent {
+    padding-block: 58px;
+  }
+
+  .hero h1 {
+    font-size: clamp(43px, 10vw, 60px);
+  }
+
+  .heroLead {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .heroNote {
+    display: none;
+  }
+
+  .button {
+    min-height: 50px;
+    padding-inline: 20px;
+    font-size: 14px;
+  }
+
+  .introGrid {
+    grid-template-columns: 1fr;
+    padding-block: 8px;
+  }
+
+  .feature {
+    grid-template-columns: 36px 1fr;
+    justify-items: start;
+    align-items: center;
+    gap: 5px 10px;
+    padding: 14px 5px;
+    text-align: left;
+    border-right: 0;
+    border-bottom: 1px solid #ded8cc;
+  }
+
+  .feature:last-child {
+    border-bottom: 0;
+  }
+
+  .featureIcon {
+    grid-row: span 2;
+    font-size: 27px;
+  }
+
+  .feature strong {
+    font-size: 19px;
+  }
+
+  .feature small {
+    grid-column: 2;
+    font-size: 14px;
+  }
+
+  .homeMeetups {
+    padding: 45px 0;
+  }
+
+  .homeMeetups h2 {
+    font-size: 34px;
+  }
+
+  .meetupsText {
+    font-size: 16px;
+  }
+}
+
+
+/* МАЛЕНЬКИЕ ЭКРАНЫ */
+
+@media (max-width: 420px) {
+  .actions {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .meetupTags {
+    gap: 8px;
+  }
+
+  .meetupTags span {
+    padding: 9px 13px;
+    font-size: 13px;
+  }
+}
+
+
+/* УЧЁТ НАСТРОЙКИ УМЕНЬШЕНИЯ АНИМАЦИИ */
+
+@media (prefers-reduced-motion: reduce) {
+  .button,
+  .textLink {
+    transition: none;
+  }
+}

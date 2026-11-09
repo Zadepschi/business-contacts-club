@@ -1,0 +1,142 @@
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap");
+
+/* ОСНОВНЫЕ ПЕРЕМЕННЫЕ */
+
+:root {
+  --ink: #17202b;
+  --ink-soft: #27313d;
+  --muted: #515c66;
+  --cream: #f3f0e9;
+  --paper: #fbfaf7;
+  --gold: #c5a268;
+  --gold-light: #e2c58e;
+  --line: #ded8cc;
+}
+
+/* БАЗОВЫЕ НАСТРОЙКИ */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: min(1160px, calc(100% - 64px));
+  margin-inline: auto;
+}
+
+/* ОБЩИЕ ЭЛЕМЕНТЫ */
+
+/* Кнопки */
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.button {
+  display: inline-flex;
+  min-height: 62px;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 0 30px;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  font-size: 17px;
+  font-weight: 700;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.button--gold {
+  color: #101c29;
+  background: linear-gradient(135deg, #f0d08e, #d5a64e);
+  box-shadow: 0 7px 22px rgba(0, 0, 0, 0.2);
+}
+
+.button--gold:hover {
+  background: #f5dba7;
+}
+
+.button--outline {
+  color: #fff;
+  border: 1.5px solid #dcb76f;
+  background: rgba(10, 23, 36, 0.5);
+}
+
+.button--outline:hover {
+  background: rgba(220, 183, 111, 0.15);
+}
+
+.button--dark {
+  color: white;
+  background: #17202b;
+}
+
+/* Текстовые ссылки */
+
+.text-link {
+  display: inline-flex;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.text-link--light {
+  color: var(--gold-light);
+}
+
+/* АДАПТИВНОСТЬ */
+
+@media (max-width: 760px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    width: min(calc(100% - 36px), 560px);
+  }
+
+  .button {
+    min-height: 49px;
+    padding-inline: 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 420px) {
+  .actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .button {
+    width: 100%;
+  }
+}
