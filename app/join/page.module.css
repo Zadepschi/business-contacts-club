@@ -225,3 +225,28 @@
     animation: none;
   }
 }
+
+
+
+
+/* Тонкая стрелка в кнопке */
+
+.arrowIcon {
+  display: inline-block;
+  flex: 0 0 auto;
+  width: 17px;
+  height: 17px;
+  vertical-align: middle;
+  transition: transform 0.25s ease;
+}
+
+.shimmerButton:hover .arrowIcon {
+  transform: translate(3px, -3px);
+}
+
+.shimmerText {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}

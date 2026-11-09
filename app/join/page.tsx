@@ -6,6 +6,25 @@ const facebookUrl =
   process.env.NEXT_PUBLIC_FACEBOOK_GROUP_URL ||
   "https://www.facebook.com/groups/1549833390202202";
 
+function ArrowUpRight() {
+  return (
+    <svg
+      className={styles.arrowIcon}
+      viewBox="0 0 24 24"
+      fill="none"
+      aria-hidden="true"
+    >
+      <path
+        d="M5 19L19 5M8 5H19V16"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
 export default function JoinPage() {
   return (
     <div className={`${styles.pageShell} ${styles.joinPage}`}>
@@ -78,16 +97,17 @@ export default function JoinPage() {
           </h2>
           <p>Присоединяйтесь к нашему сообществу в Facebook.</p>
 
-         <a
-  className={`button button--gold ${styles.shimmerButton}`}
-  href={facebookUrl}
-  target="_blank"
-  rel="noreferrer"
->
-  <span className={styles.shimmerText}>
-    Перейти в группу Facebook <span>↗</span>
-  </span>
-</a>
+          <a
+            className={`button button--gold ${styles.shimmerButton}`}
+            href={facebookUrl}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span className={styles.shimmerText}>
+              Перейти в группу Facebook
+              <ArrowUpRight />
+            </span>
+          </a>
         </div>
       </section>
     </div>

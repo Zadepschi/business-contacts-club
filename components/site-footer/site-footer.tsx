@@ -7,6 +7,25 @@ const facebookUrl =
   process.env.NEXT_PUBLIC_FACEBOOK_GROUP_URL ||
   "https://www.facebook.com/groups/1549833390202202";
 
+function ArrowUpRight() {
+  return (
+    <svg
+      className={styles.arrowIcon}
+      viewBox="0 0 24 24"
+      fill="none"
+      aria-hidden="true"
+    >
+      <path
+        d="M5 19L19 5M8 5H19V16"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
 export function SiteFooter() {
   const currentYear = new Date().getFullYear();
 
@@ -58,7 +77,7 @@ export function SiteFooter() {
               rel="noopener noreferrer"
               className={styles.facebook}
             >
-              Мы в Facebook <span aria-hidden="true">↗</span>
+              Мы в Facebook <ArrowUpRight />
             </a>
           </div>
         </div>
