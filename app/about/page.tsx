@@ -1,6 +1,21 @@
-
+import type { Metadata } from "next";
 import Link from "next/link";
 import styles from "./page.module.css";
+
+export const metadata: Metadata = {
+  title: "О клубе — сообщество предпринимателей Нью-Йорка",
+  description:
+    "Узнайте о Brooklyn Bridge — русскоязычном клубе деловых контактов для предпринимателей Нью-Йорка. Знакомства, общение, обмен опытом и новые возможности для сотрудничества.",
+  alternates: {
+    canonical: "/about",
+  },
+  openGraph: {
+    title: "О клубе | Brooklyn Bridge",
+    description:
+      "Brooklyn Bridge — клуб деловых контактов для русскоязычных предпринимателей Нью-Йорка.",
+    url: "/about",
+  },
+};
 
 const activities = [
   {

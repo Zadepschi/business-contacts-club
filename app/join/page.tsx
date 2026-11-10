@@ -1,6 +1,20 @@
-
-import Link from "next/link";
+import type { Metadata } from "next";
 import styles from "./page.module.css";
+
+export const metadata: Metadata = {
+  title: "Как вступить в клуб деловых контактов",
+  description:
+    "Узнайте, как присоединиться к Brooklyn Bridge — русскоязычному клубу деловых контактов для предпринимателей Нью-Йорка. Личное знакомство, участие в мероприятиях и общение с предпринимателями.",
+  alternates: {
+    canonical: "/join",
+  },
+  openGraph: {
+    title: "Как вступить | Brooklyn Bridge",
+    description:
+      "Узнайте, как стать участником Brooklyn Bridge — клуба деловых контактов для русскоязычных предпринимателей.",
+    url: "/join",
+  },
+};
 
 const facebookUrl =
   process.env.NEXT_PUBLIC_FACEBOOK_GROUP_URL ||
