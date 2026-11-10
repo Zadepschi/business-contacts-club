@@ -141,12 +141,6 @@ export default function HomePage() {
             </Link>
           </div>
 
-          <div className={styles.meetupTags}>
-            <span>Ужины</span>
-            <span>Баня</span>
-            <span>Спорт</span>
-            <span>Выезды</span>
-          </div>
         </div>
       </section>
     </>

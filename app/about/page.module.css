@@ -81,19 +81,19 @@
 }
 
 .activityDinner {
-  background-image: url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=700&q=85");
+  background-image: url("/dinner.webp");
 }
 
 .activitySauna {
-  background-image: url("https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=700&q=85");
+  background-image: url("/bath.webp");
 }
 
 .activitySport {
-  background-image: url("https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?auto=format&fit=crop&w=700&q=85");
+  background-image: url("/sport.webp");
 }
 
 .activityOutdoor {
-  background-image: url("https://images.unsplash.com/photo-1449158743715-0a90ebb6d8?auto=format&fit=crop&w=700&q=85");
+  background-image: url("/outdoor1.webp");
 }
 
 .activityNumber {
