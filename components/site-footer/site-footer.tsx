@@ -1,6 +1,7 @@
 
-import Link from "next/link";
 import Image from "next/image";
+import { getTranslations } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
 import styles from "./siteFooter.module.css";
 
 const facebookUrl =
@@ -26,7 +27,9 @@ function ArrowUpRight() {
   );
 }
 
-export function SiteFooter() {
+export async function SiteFooter() {
+  const t = await getTranslations("Footer");
+  const header = await getTranslations("Header");
   const currentYear = new Date().getFullYear();
 
   return (
@@ -37,7 +40,7 @@ export function SiteFooter() {
             <Link
               href="/"
               className={styles.logoLink}
-              aria-label="Brooklyn Bridge — главная"
+              aria-label={header("homeLabel")}
             >
               <Image
                 src="/logo-bridge3.png"
@@ -53,41 +56,41 @@ export function SiteFooter() {
             </Link>
 
             <p className={styles.description}>
-              Клуб деловых контактов.
-              Некоммерческое сообщество предпринимателей,
-              объединённых общением и взаимной поддержкой.
+              {t("description")}
             </p>
           </div>
 
           <div className={styles.column}>
-            <h3 className={styles.heading}>Навигация</h3>
-            <Link href="/">Главная</Link>
-            <Link href="/about">О клубе</Link>
-            <Link href="/join">Как вступить</Link>
+            <h3 className={styles.heading}>
+              {t("navigation")}
+            </h3>
+            <Link href="/">{header("home")}</Link>
+            <Link href="/about">{header("about")}</Link>
+            <Link href="/join">{header("join")}</Link>
           </div>
 
           <div className={styles.column}>
-            <h3 className={styles.heading}>Наше сообщество</h3>
-            <p>
-              Живое общение. Настоящие знакомства.
-            </p>
+            <h3 className={styles.heading}>
+              {t("community")}
+            </h3>
+            <p>{t("tagline")}</p>
             <a
               href={facebookUrl}
               target="_blank"
               rel="noopener noreferrer"
               className={styles.facebook}
             >
-              Мы в Facebook <ArrowUpRight />
+              {t("facebook")} <ArrowUpRight />
             </a>
           </div>
         </div>
 
         <div className={styles.bottom}>
           <span>
-            © {currentYear} Brooklyn Bridge. Все права защищены.
+            © {currentYear} Brooklyn Bridge. {t("copyright")}
           </span>
           <span className={styles.tagline}>
-            Объединяем людей. Создаём возможности.
+            {t("bottomTagline")}
           </span>
         </div>
       </div>

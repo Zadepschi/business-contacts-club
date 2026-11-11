@@ -4,10 +4,16 @@ const siteUrl = "https://brooklyn-bridge.us";
 
 export default function robots(): MetadataRoute.Robots {
   return {
-    rules: {
-      userAgent: "*",
-      allow: "/",
-    },
+    rules: [
+      {
+        userAgent: "*",
+        allow: "/",
+      },
+      {
+        userAgent: "Googlebot",
+        allow: "/",
+      },
+    ],
     sitemap: `${siteUrl}/sitemap.xml`,
   };
 }

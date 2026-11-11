@@ -1,13 +1,14 @@
-
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
+import { useLocale, useTranslations } from "next-intl";
+import { Link, usePathname } from "@/i18n/navigation";
 import styles from "./site-header.module.css";
 
 export function SiteHeader() {
   const pathname = usePathname();
+  const locale = useLocale();
+  const t = useTranslations("Header");
 
   return (
     <header className={styles.header}>
@@ -15,7 +16,7 @@ export function SiteHeader() {
         <Link
           className={styles.brand}
           href="/"
-          aria-label="Brooklyn Bridge — главная"
+          aria-label={t("homeLabel")}
         >
           <Image
             src="/logo-bridge3.png"
@@ -33,13 +34,13 @@ export function SiteHeader() {
           </span>
         </Link>
 
-        <nav className={styles.nav} aria-label="Основная навигация">
+        <nav className={styles.nav} aria-label={t("navigationLabel")}>
           <Link
             href="/"
             className={pathname === "/" ? styles.active : ""}
             aria-current={pathname === "/" ? "page" : undefined}
           >
-            Главная
+            {t("home")}
           </Link>
 
           <Link
@@ -47,7 +48,7 @@ export function SiteHeader() {
             className={pathname === "/about" ? styles.active : ""}
             aria-current={pathname === "/about" ? "page" : undefined}
           >
-            О клубе
+            {t("about")}
           </Link>
 
           <Link
@@ -55,8 +56,30 @@ export function SiteHeader() {
             className={pathname === "/join" ? styles.active : ""}
             aria-current={pathname === "/join" ? "page" : undefined}
           >
-            Как вступить
+            {t("join")}
           </Link>
+
+          <span className={styles.languageSwitcher}>
+            <Link
+              href={pathname}
+              locale="en"
+              className={locale === "en" ? styles.languageActive : ""}
+              aria-current={locale === "en" ? "page" : undefined}
+            >
+              EN
+            </Link>
+
+            <span aria-hidden="true">|</span>
+
+            <Link
+              href={pathname}
+              locale="ru"
+              className={locale === "ru" ? styles.languageActive : ""}
+              aria-current={locale === "ru" ? "page" : undefined}
+            >
+              RU
+            </Link>
+          </span>
         </nav>
       </div>
     </header>

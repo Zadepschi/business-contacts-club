@@ -1,5 +1,9 @@
 
-import Link from "next/link";
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { getTranslations } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
+import { routing } from "@/i18n/routing";
 import styles from "./page.module.css";
 
 const facebookUrl =
@@ -44,7 +48,56 @@ function ArrowRight() {
   );
 }
 
-export default function HomePage() {
+
+type PageProps = {
+  params: Promise<{ locale: string }>;
+};
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { locale } = await params;
+
+  if (!routing.locales.includes(locale as "en" | "ru")) {
+    notFound();
+  }
+
+  const t = await getTranslations({
+    locale,
+    namespace: "Metadata",
+  });
+
+  const title = t("home.title");
+  const description = t("home.description");
+
+  const canonical = locale === "en" ? "/" : "/ru";
+
+  return {
+    title,
+    description,
+
+    alternates: {
+      canonical,
+      languages: {
+        en: "/",
+        ru: "/ru",
+      },
+    },
+
+    openGraph: {
+      type: "website",
+      siteName: "Brooklyn Bridge",
+      title,
+      description,
+      locale: locale === "ru" ? "ru_RU" : "en_US",
+      url: canonical,
+    },
+  };
+}
+
+export default async function HomePage() {
+  const t = await getTranslations("Home");
+
   return (
     <>
       <section className={styles.hero}>
@@ -52,18 +105,15 @@ export default function HomePage() {
 
         <div className={`container ${styles.heroContent}`}>
           <p className={styles.eyebrow}>
-            Сообщество предпринимателей
+            {t("eyebrow")}
           </p>
 
           <h1>
-            Клуб деловых
-            <br />
-            контактов
+            {t("title")}
           </h1>
 
           <p className={styles.heroLead}>
-            Знакомимся, обмениваемся опытом и создаём партнёрства —
-            в деловой среде и за её пределами.
+            {t("lead")}
           </p>
 
           <div className={styles.actions}>
@@ -71,7 +121,7 @@ export default function HomePage() {
               className={`${styles.button} ${styles.buttonGold}`}
               href="/about"
             >
-              Узнать о клубе <ArrowUpRight />
+              {t("aboutButton")} <ArrowUpRight />
             </Link>
 
             <a
@@ -80,13 +130,13 @@ export default function HomePage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Группа в Facebook <ArrowUpRight />
+              {t("facebookButton")} <ArrowUpRight />
             </a>
           </div>
         </div>
 
         <div className={styles.heroNote}>
-          Живое общение. Настоящие знакомства.
+          {t("heroNote")}
         </div>
       </section>
 
@@ -96,20 +146,20 @@ export default function HomePage() {
             <span className={styles.featureIcon}>
               <ArrowUpRight />
             </span>
-            <strong>Новые знакомства</strong>
-            <small>Расширяем круг деловых контактов</small>
+            <strong>{t("features.connections.title")}</strong>
+            <small>{t("features.connections.text")}</small>
           </div>
 
           <div className={styles.feature}>
             <span className={styles.featureIcon}>◇</span>
-            <strong>Обмен опытом</strong>
-            <small>Делимся взглядами и идеями</small>
+            <strong>{t("features.experience.title")}</strong>
+            <small>{t("features.experience.text")}</small>
           </div>
 
           <div className={styles.feature}>
             <span className={styles.featureIcon}>∞</span>
-            <strong>Партнёрства</strong>
-            <small>Находим возможности для сотрудничества</small>
+            <strong>{t("features.partnerships.title")}</strong>
+            <small>{t("features.partnerships.text")}</small>
           </div>
         </div>
       </section>
@@ -118,29 +168,24 @@ export default function HomePage() {
         <div className={`container ${styles.homeMeetupsInner}`}>
           <div className={styles.meetupsContent}>
             <p className={styles.eyebrow}>
-              Встречаемся раз в месяц
+              {t("meetups.eyebrow")}
             </p>
 
             <h2>
-              Бизнес объединяет.
-              <br />
-              Общение сближает.
+              {t("meetups.title")}
             </h2>
 
             <p className={styles.meetupsText}>
-              Ужины в ресторанах, баня, спорт и поездки за город —
-              выбираем формат, в котором приятно знакомиться
-              и проводить время вместе.
+              {t("meetups.text")}
             </p>
 
             <Link
               className={styles.textLink}
               href="/about"
             >
-              Больше о наших встречах <ArrowRight />
+              {t("meetups.link")} <ArrowRight />
             </Link>
           </div>
-
         </div>
       </section>
     </>

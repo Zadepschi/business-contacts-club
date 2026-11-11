@@ -1,0 +1,141 @@
+
+{
+ "Metadata": {
+  "home": {
+    "title": "Business Networking Club in New York",
+    "description": "A community of entrepreneurs in New York built around meaningful connections, shared experiences and business relationships."
+  },
+  "about": {
+    "title": "About the Club",
+    "description": "Discover Brooklyn Bridge, a business networking club for entrepreneurs in New York. Meet new people, exchange ideas and explore opportunities to collaborate."
+  },
+  "join": {
+    "title": "How to Join",
+    "description": "Learn how to join Brooklyn Bridge, a business networking club for Russian-speaking entrepreneurs in New York. Get acquainted, attend events and connect with fellow business owners."
+  }
+},
+  "Home": {
+    "eyebrow": "A Community of Entrepreneurs",
+    "title": "Business Networking Club",
+    "lead": "We meet, exchange experiences and build partnerships — in business and beyond.",
+    "aboutButton": "Discover the Club",
+    "facebookButton": "Facebook Group",
+    "heroNote": "Real Conversations. Meaningful Connections.",
+    "features": {
+      "connections": {
+        "title": "New Connections",
+        "text": "Expand your business network"
+      },
+      "experience": {
+        "title": "Shared Experience",
+        "text": "Exchange perspectives and ideas"
+      },
+      "partnerships": {
+        "title": "Partnerships",
+        "text": "Discover opportunities to collaborate"
+      }
+    },
+    "meetups": {
+      "eyebrow": "We Meet Once a Month",
+      "title": "Business Brings Us Together. People Make It Meaningful.",
+      "text": "Restaurant dinners, sauna outings, sports and trips outside the city — we choose settings where it's easy to connect and enjoy time together.",
+      "link": "More About Our Gatherings"
+    }
+  },
+  "About": {
+    "eyebrow": "Who We Are and What We Do",
+    "title": "About the Club",
+    "lead": "A business networking club is a community of entrepreneurs where members meet people from across the business world, talk about their ventures, share experiences and practical advice, help one another identify challenges and growth opportunities, and discover new ways to collaborate.",
+    "activities": {
+      "eyebrow": "We Meet Once a Month",
+      "title": "What We Do",
+      "description": "We get together in relaxed, informal settings — no lectures, mandatory agendas or unnecessary formalities.",
+      "items": [
+        {
+          "title": "Restaurant Dinners",
+          "text": "We gather around the table and get to know one another in a relaxed atmosphere."
+        },
+        {
+          "title": "Sauna and Relaxation",
+          "text": "We connect outside the usual business environment."
+        },
+        {
+          "title": "Sports and Activities",
+          "text": "We stay active and find more ways to connect."
+        },
+        {
+          "title": "Trips Outside the City",
+          "text": "We change the scenery, unwind and continue getting to know one another."
+        }
+      ]
+    },
+    "note": "We don't offer business training or organize meetings with mentors. This isn't a business education club — it's a business networking club.",
+    "cta": {
+      "title": "Does This Sound Like Your Kind of Community?",
+      "text": "Learn more about becoming a member.",
+      "button": "How to Join"
+    }
+  },
+  "Join": {
+    "eyebrow": "Join the Community",
+    "title": "How to Join",
+    "lead": "Membership is open to entrepreneurs who are actively running a business. New members are welcomed after a personal introduction. This helps us maintain a strong community and make sure you'll enjoy connecting with fellow members.",
+    "steps": [
+      {
+        "title": "Meet Us in Person",
+        "text": "Contact the organizer and arrange an introductory meeting."
+      },
+      {
+        "title": "Tell Us About Yourself",
+        "text": "We'll get acquainted and learn about your business and interests."
+      },
+      {
+        "title": "Become a Member",
+        "text": "After the introduction, you'll be able to join the club and our Facebook group."
+      }
+    ],
+    "rules": {
+      "eyebrow": "Simple and Straightforward",
+      "title": "Club Guidelines",
+      "items": [
+        "Club membership is free.",
+        "Each member covers their own expenses at events.",
+        "Selling products and persistent advertising within the club are not allowed.",
+        "We treat one another with respect and do not tolerate rude or disrespectful behavior."
+      ]
+    },
+    "cta": {
+      "eyebrow": "Let's Get Acquainted",
+      "title": "Great Connections Start with a Simple Introduction.",
+      "text": "Join our community on Facebook.",
+      "button": "Visit Our Facebook Group"
+    }
+  },
+  "Navigation": {
+    "home": "Home",
+    "about": "About Us",
+    "join": "Become a Member"
+  },
+  "Language": {
+    "english": "English",
+    "russian": "Russian"
+  },
+ "Header": {
+  "home": "Home",
+  "about": "About Us",
+  "join": "How to Join",
+  "homeLabel": "Brooklyn Bridge — Home",
+  "navigationLabel": "Main navigation",
+  "languageLabel": "Select language"
+},
+  "Footer": {
+    "description": "A business networking club. A nonprofit community of entrepreneurs brought together through conversation and mutual support.",
+    "navigation": "Navigation",
+    "community": "Our Community",
+    "tagline": "Real Conversations. Meaningful Connections.",
+    "facebook": "Find Us on Facebook",
+    "copyright": "All rights reserved.",
+    "bottomTagline": "Bringing People Together. Creating Opportunities."
+  }
+
+}

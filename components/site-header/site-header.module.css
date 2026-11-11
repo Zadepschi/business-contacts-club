@@ -240,3 +240,85 @@
     transition: none;
   }
 }
+
+
+/* ========================================
+   LANGUAGE SWITCHER — ПЕРЕКЛЮЧАТЕЛЬ ЯЗЫКА
+======================================== */
+
+.languageSwitcher {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  flex-shrink: 0;
+  margin-left: 0;
+  padding: 4px;
+  border: 1px solid rgba(229, 189, 112, 0.5);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  white-space: nowrap;
+}
+
+/* Ссылки переключателя */
+
+.nav .languageSwitcher a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 38px;
+  padding: 7px 9px;
+  border-radius: 5px;
+
+  color: #f4f0e8;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1;
+  text-decoration: none;
+
+  opacity: 0.75;
+  transition: background 0.2s ease, color 0.2s ease, opacity 0.2s ease;
+}
+
+/* Убираем золотую линию обычного меню */
+
+.nav .languageSwitcher a::after {
+  display: none;
+}
+
+/* Активный язык */
+
+.nav .languageSwitcher a.languageActive {
+  color: #0b1927;
+  background: linear-gradient(110deg, #d4a958, #fff0c4);
+  font-weight: 700;
+  opacity: 1;
+}
+
+/* Наведение */
+
+.nav .languageSwitcher a:hover {
+  color: #fff0c4;
+  background: rgba(229, 189, 112, 0.14);
+  opacity: 1;
+}
+
+.nav .languageSwitcher a.languageActive:hover {
+  color: #0b1927;
+  background: linear-gradient(110deg, #d4a958, #fff0c4);
+}
+
+/* Мобильная версия */
+
+@media (max-width: 640px) {
+  .languageSwitcher {
+    margin-left: 0;
+  }
+
+  .nav .languageSwitcher a {
+    font-size: 12px;
+    min-width: 34px;
+    padding: 7px 8px;
+  }
+}
