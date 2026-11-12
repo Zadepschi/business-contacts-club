@@ -26,7 +26,7 @@
 .pageHeading h1 {
   margin: 0 0 12px;
   color: #142b3d;
-  font-family: Georgia, "Times New Roman", serif;
+   font-family: "Montserrat", Arial, sans-serif;
   font-size: clamp(42px, 5vw, 62px);
   font-weight: 600;
   line-height: 1.1;
@@ -64,7 +64,7 @@
 .formPanel h2 {
   margin: 0 0 24px;
   color: #142b3d;
-  font-family: Georgia, "Times New Roman", serif;
+   font-family: "Montserrat", Arial, sans-serif;
   font-size: clamp(28px, 3vw, 36px);
   font-weight: 600;
   line-height: 1.2;
@@ -292,11 +292,26 @@
 
 @media (max-width: 390px) {
   .socialLinks {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
   }
 
   .socialLinks a {
-    width: 100%;
+    flex: 0 0 48px;
+    width: 48px;
+    min-width: 48px;
+    height: 48px;
+    min-height: 48px;
+    padding: 0;
+    border-radius: 50%;
+  }
+
+  .socialLinks a svg {
+    width: 22px;
+    height: 22px;
   }
 }

@@ -55,7 +55,7 @@
 
 .brandName {
   color: #e2c58e;
-  font-family: "Playfair Display", Georgia, serif;
+   font-family: "Montserrat", Arial, sans-serif;
   font-size: 25px;
   font-weight: 600;
   letter-spacing: 0.015em;
@@ -91,7 +91,7 @@
 .heading {
   margin: 4px 0 8px;
   color: #e2c58e;
-  font-family: "Playfair Display", Georgia, serif;
+   font-family: "Montserrat", Arial, sans-serif;
   font-size: 19px;
   font-weight: 500;
 }
