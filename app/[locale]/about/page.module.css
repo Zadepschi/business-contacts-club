@@ -116,7 +116,8 @@
   line-height: 1.5;
 }
 
-/* Информационная полоса */
+
+/* Информационная полоса с цитатой */
 
 .noteBand {
   background: var(--cream);
@@ -125,16 +126,30 @@
 
 .noteBandInner {
   display: flex;
-  align-items: center;
-  gap: 22px;
+  align-items: flex-start;
+  gap: 18px;
   padding-block: 25px;
 }
 
 .noteMark {
+  flex: 0 0 auto;
   color: #bd9454;
-  font-family: "Montserrat", Arial, sans-serif;
-  font-size: 60px;
-  line-height: 0.6;
+  font-family: Georgia, serif;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 0.8;
+}
+
+.closingQuote {
+  display: inline;
+  position: static;
+  margin-left: 4px;
+  color: #bd9454;
+  font-family: Georgia, serif;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1;
+  vertical-align: baseline;
 }
 
 .noteBandInner p {
@@ -257,5 +272,28 @@
 
   .activityCard p {
     font-size: 12px;
+  }
+}
+
+
+
+/* На мобильных устройствах */
+
+@media (max-width: 760px) {
+  .noteBandInner {
+    gap: 12px;
+    padding-block: 20px;
+  }
+
+  .noteMark {
+    font-size: 38px;
+  }
+
+  .closingQuote {
+    font-size: 38px;
+  }
+  .noteBandInner p {
+    font-size: 17px;
+    line-height: 1.55;
   }
 }

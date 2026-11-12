@@ -3,15 +3,15 @@
   "Metadata": {
     "home": {
       "title": "Business Networking Club in New York",
-      "description": "A community of entrepreneurs in New York built around meaningful connections, shared experiences and business relationships."
+      "description": "A community of businessmen  in New York built around meaningful connections, shared experiences and business relationships."
     },
     "about": {
       "title": "About the Club",
-      "description": "Discover Brooklyn Bridge, a business networking club for entrepreneurs in New York. Meet new people, exchange ideas and explore opportunities to collaborate."
+      "description": "Discover Brooklyn Bridge, a business networking club for businessmen  in New York. Meet new people, exchange ideas and explore opportunities to collaborate."
     },
     "join": {
       "title": "How to Join",
-      "description": "Learn how to join Brooklyn Bridge, a business networking club for Russian-speaking entrepreneurs in New York. Get acquainted, attend events and connect with fellow business owners."
+      "description": "Learn how to join Brooklyn Bridge, a business networking club for Russian-speaking businessmen  in New York. Get acquainted, attend events and connect with fellow business owners."
     },
     "contact": {
       "title": "Contact Brooklyn Bridge",
@@ -19,7 +19,7 @@
     }
   },
   "Home": {
-    "eyebrow": "A Community of Entrepreneurs",
+    "eyebrow": "A Business Networking Community",
     "title": "Business Networking Club",
     "lead": "We meet, exchange experiences and build partnerships — in business and beyond.",
     "aboutButton": "Discover the Club",
@@ -49,7 +49,7 @@
   "About": {
     "eyebrow": "Who We Are and What We Do",
     "title": "About the Club",
-    "lead": "A business networking club is a community of entrepreneurs where members meet people from across the business world, talk about their ventures, share experiences and practical advice, help one another identify challenges and growth opportunities, and discover new ways to collaborate.",
+    "lead": "A business networking club is a community of businessmen  where members meet people from across the business world, talk about their ventures, share experiences and practical advice, help one another identify challenges and growth opportunities, and discover new ways to collaborate.",
     "activities": {
       "eyebrow": "We Meet Once a Month",
       "title": "What We Do",
@@ -83,7 +83,7 @@
   "Join": {
     "eyebrow": "Join the Community",
     "title": "How to Join",
-    "lead": "Membership is open to entrepreneurs who are actively running a business. New members are welcomed after a personal introduction. This helps us maintain a strong community and make sure you'll enjoy connecting with fellow members.",
+    "lead": "Membership is open to businessmen who are actively running a business. New members are welcomed after a personal introduction. This helps us maintain a strong community and make sure you'll enjoy connecting with fellow members.",
     "steps": [
       {
         "title": "Meet Us in Person",
@@ -160,7 +160,7 @@
     "languageLabel": "Select language"
   },
   "Footer": {
-    "description": "A business networking club. A nonprofit community of entrepreneurs brought together through conversation and mutual support.",
+    "description": "A business networking club. A nonprofit community of businessmen brought together through conversation and mutual support.",
     "navigation": "Navigation",
     "community": "Our Community",
     "tagline": "Real Conversations. Meaningful Connections.",

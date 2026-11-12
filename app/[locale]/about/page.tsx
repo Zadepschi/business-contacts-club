@@ -84,9 +84,12 @@ export default async function AboutPage() {
 
       <section className={styles.noteBand}>
         <div className={`container ${styles.noteBandInner}`}>
-          <span className={styles.noteMark}>“</span>
-          <p>{t("note")}</p>
-        </div>
+  <span className={styles.noteMark} aria-hidden="true">“</span>
+  <p>
+    {t("note")}
+    <span className={styles.closingQuote} aria-hidden="true">”</span>
+  </p>
+</div>
       </section>
 
       <section className={`container ${styles.simpleCta}`}>
