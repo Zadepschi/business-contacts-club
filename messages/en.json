@@ -1,19 +1,23 @@
 
 {
- "Metadata": {
-  "home": {
-    "title": "Business Networking Club in New York",
-    "description": "A community of entrepreneurs in New York built around meaningful connections, shared experiences and business relationships."
+  "Metadata": {
+    "home": {
+      "title": "Business Networking Club in New York",
+      "description": "A community of entrepreneurs in New York built around meaningful connections, shared experiences and business relationships."
+    },
+    "about": {
+      "title": "About the Club",
+      "description": "Discover Brooklyn Bridge, a business networking club for entrepreneurs in New York. Meet new people, exchange ideas and explore opportunities to collaborate."
+    },
+    "join": {
+      "title": "How to Join",
+      "description": "Learn how to join Brooklyn Bridge, a business networking club for Russian-speaking entrepreneurs in New York. Get acquainted, attend events and connect with fellow business owners."
+    },
+    "contact": {
+      "title": "Contact Brooklyn Bridge",
+      "description": "Contact Brooklyn Bridge, a business networking club in Brooklyn, New York. Connect with our community by phone, WhatsApp, Telegram or Facebook."
+    }
   },
-  "about": {
-    "title": "About the Club",
-    "description": "Discover Brooklyn Bridge, a business networking club for entrepreneurs in New York. Meet new people, exchange ideas and explore opportunities to collaborate."
-  },
-  "join": {
-    "title": "How to Join",
-    "description": "Learn how to join Brooklyn Bridge, a business networking club for Russian-speaking entrepreneurs in New York. Get acquainted, attend events and connect with fellow business owners."
-  }
-},
   "Home": {
     "eyebrow": "A Community of Entrepreneurs",
     "title": "Business Networking Club",
@@ -111,6 +115,32 @@
       "button": "Visit Our Facebook Group"
     }
   },
+  "Contact": {
+    "eyebrow": "GET IN TOUCH",
+    "title": "Contact Us",
+    "lead": "We would be happy to hear from you. Reach out to us or send a message using the form.",
+    "details": {
+      "eyebrow": "OUR CONTACTS",
+      "title": "Let's connect",
+      "phone": "Phone",
+      "facebook": "Visit our Facebook group",
+      "location": "Location"
+    },
+    "form": {
+      "eyebrow": "SEND A MESSAGE",
+      "title": "Write to us",
+      "lead": "Fill out the form and we will get back to you.",
+      "name": "Your name",
+      "email": "Email address",
+      "message": "Your message",
+      "submit": "Send message",
+      "sending": "Sending...",
+      "successTitle": "Thank you for your message!",
+      "successText": "Your message has been sent successfully.",
+      "phone": "Your Phone",
+      "error": "Something went wrong. Please try again."
+    }
+  },
   "Navigation": {
     "home": "Home",
     "about": "About Us",
@@ -120,14 +150,15 @@
     "english": "English",
     "russian": "Russian"
   },
- "Header": {
-  "home": "Home",
-  "about": "About Us",
-  "join": "How to Join",
-  "homeLabel": "Brooklyn Bridge — Home",
-  "navigationLabel": "Main navigation",
-  "languageLabel": "Select language"
-},
+  "Header": {
+    "home": "Home",
+    "about": "About Us",
+    "join": "How to Join",
+    "contact": "Contact",
+    "homeLabel": "Brooklyn Bridge — Home",
+    "navigationLabel": "Main navigation",
+    "languageLabel": "Select language"
+  },
   "Footer": {
     "description": "A business networking club. A nonprofit community of entrepreneurs brought together through conversation and mutual support.",
     "navigation": "Navigation",
@@ -137,5 +168,4 @@
     "copyright": "All rights reserved.",
     "bottomTagline": "Bringing People Together. Creating Opportunities."
   }
-
 }

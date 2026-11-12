@@ -26,6 +26,13 @@
    BRAND — ЛОГОТИП И НАЗВАНИЕ
 ======================================== */
 
+.brandRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 0;
+}
+
 .brand {
   display: inline-flex;
   align-items: center;
@@ -100,7 +107,7 @@
   gap: 48px;
 }
 
-.nav a {
+.nav > a {
   position: relative;
   padding: 12px 0;
 
@@ -116,7 +123,7 @@
 
 /* Золотая линия под пунктом меню */
 
-.nav a::after {
+.nav > a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -137,23 +144,92 @@
 
 /* Наведение курсора */
 
-.nav a:hover {
+.nav > a:hover {
   color: #e5bd70;
 }
 
-.nav a:hover::after {
+.nav > a:hover::after {
   width: 100%;
 }
 
 /* Активная страница */
 
-.nav a.active {
+.nav > a.active {
   color: #e5bd70;
   font-weight: 600;
 }
 
-.nav a.active::after {
+.nav > a.active::after {
   width: 100%;
+}
+
+/* ========================================
+   LANGUAGE TOGGLE — ПЕРЕКЛЮЧАТЕЛЬ ЯЗЫКА
+======================================== */
+
+/* Общий стиль одной кнопки */
+
+.languageToggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 42px;
+  height: 32px;
+  flex-shrink: 0;
+
+  color: #0b1927;
+
+  background: linear-gradient(
+    110deg,
+    #d4a958,
+    #fff0c4,
+    #d4a958
+  );
+
+  border: 1px solid rgba(229, 189, 112, 0.8);
+  border-radius: 6px;
+
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.languageToggle:hover {
+  color: #0b1927;
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 4px 12px rgba(213, 166, 78, 0.25);
+}
+
+/* Убираем подчёркивание меню у кнопки */
+
+.nav .languageToggle::after {
+  display: none;
+}
+
+.nav .languageToggle:hover {
+  color: #0b1927;
+}
+
+/* Десктопный переключатель виден по умолчанию */
+
+.desktopLanguageSwitcher {
+  display: flex;
+  align-items: center;
+}
+
+/* Мобильный переключатель скрыт на компьютерах */
+
+.mobileLanguageSwitcher {
+  display: none;
 }
 
 /* ========================================
@@ -172,6 +248,10 @@
     height: 70px;
   }
 
+  .brand {
+    gap: 14px;
+  }
+
   .brandName {
     font-size: 25px;
   }
@@ -180,7 +260,7 @@
     gap: 24px;
   }
 
-  .nav a {
+  .nav > a {
     font-size: 16px;
   }
 }
@@ -195,7 +275,12 @@
     padding: 14px 0;
 
     flex-direction: column;
+    align-items: center;
     gap: 12px;
+  }
+
+  .brandRow {
+    width: 100%;
   }
 
   .brand {
@@ -215,14 +300,65 @@
     font-size: 24px;
   }
 
-  .nav {
-    width: 100%;
-    justify-content: center;
-    gap: 26px;
+  /* Переключатель рядом с логотипом */
+
+  .mobileLanguageSwitcher {
+    display: block;
+    flex-shrink: 0;
   }
 
-  .nav a {
+  /* Скрываем переключатель в меню */
+
+  .desktopLanguageSwitcher {
+    display: none;
+  }
+
+  /* Меню занимает отдельную строку */
+
+  .nav {
+    width: 100%;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .nav > a {
     font-size: 14px;
+  }
+}
+
+/* ========================================
+   SMALL MOBILE — МАЛЕНЬКИЕ ЭКРАНЫ
+======================================== */
+
+@media (max-width: 380px) {
+  .brand {
+    gap: 8px;
+  }
+
+  .logo {
+    width: 62px;
+    height: 50px;
+  }
+
+  .divider {
+    height: 36px;
+  }
+
+  .brandName {
+    font-size: 19px;
+  }
+
+  .nav {
+    gap: 8px;
+  }
+
+  .nav > a {
+    font-size: 13px;
+  }
+
+  .languageToggle {
+    width: 38px;
+    height: 30px;
   }
 }
 
@@ -235,90 +371,43 @@
     animation: none;
   }
 
-  .nav a,
-  .nav a::after {
+  .nav > a,
+  .nav > a::after,
+  .languageToggle {
     transition: none;
   }
+
+  .languageToggle:hover {
+    transform: none;
+  }
 }
 
 
-/* ========================================
-   LANGUAGE SWITCHER — ПЕРЕКЛЮЧАТЕЛЬ ЯЗЫКА
-======================================== */
-
-.languageSwitcher {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2px;
+.networkLogo {
+  display: block;
+  width: 260px;
+  height: 80px;
+  object-fit: contain;
   flex-shrink: 0;
-  margin-left: 0;
-  padding: 4px;
-  border: 1px solid rgba(229, 189, 112, 0.5);
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.04);
-  white-space: nowrap;
 }
 
-/* Ссылки переключателя */
-
-.nav .languageSwitcher a {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 38px;
-  padding: 7px 9px;
-  border-radius: 5px;
-
-  color: #f4f0e8;
-  font-size: 13px;
-  font-weight: 500;
-  line-height: 1;
-  text-decoration: none;
-
-  opacity: 0.75;
-  transition: background 0.2s ease, color 0.2s ease, opacity 0.2s ease;
+@media (max-width: 900px) {
+  .networkLogo {
+    width: 220px;
+    height: 70px;
+  }
 }
-
-/* Убираем золотую линию обычного меню */
-
-.nav .languageSwitcher a::after {
-  display: none;
-}
-
-/* Активный язык */
-
-.nav .languageSwitcher a.languageActive {
-  color: #0b1927;
-  background: linear-gradient(110deg, #d4a958, #fff0c4);
-  font-weight: 700;
-  opacity: 1;
-}
-
-/* Наведение */
-
-.nav .languageSwitcher a:hover {
-  color: #fff0c4;
-  background: rgba(229, 189, 112, 0.14);
-  opacity: 1;
-}
-
-.nav .languageSwitcher a.languageActive:hover {
-  color: #0b1927;
-  background: linear-gradient(110deg, #d4a958, #fff0c4);
-}
-
-/* Мобильная версия */
 
 @media (max-width: 640px) {
-  .languageSwitcher {
-    margin-left: 0;
+  .networkLogo {
+    width: 190px;
+    height: 60px;
   }
+}
 
-  .nav .languageSwitcher a {
-    font-size: 12px;
-    min-width: 34px;
-    padding: 7px 8px;
+@media (max-width: 380px) {
+  .networkLogo {
+    width: 165px;
+    height: 55px;
   }
 }

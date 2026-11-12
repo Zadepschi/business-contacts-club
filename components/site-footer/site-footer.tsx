@@ -43,16 +43,21 @@ export async function SiteFooter() {
               aria-label={header("homeLabel")}
             >
               <Image
-                src="/logo-bridge3.png"
+                src="/logo5.png"
                 alt=""
-                width={64}
-                height={64}
+                width={84}
+                height={84}
                 className={styles.logo}
               />
               <span className={styles.divider} />
-              <span className={styles.brandName}>
-                Brooklyn Bridge
-              </span>
+              <Image
+  src="/network.png"
+  alt="Brooklyn Bridge Business Networking Club"
+  width={260}
+  height={80}
+  priority
+  className={styles.networkLogo}
+/>
             </Link>
 
             <p className={styles.description}>
@@ -67,6 +72,7 @@ export async function SiteFooter() {
             <Link href="/">{header("home")}</Link>
             <Link href="/about">{header("about")}</Link>
             <Link href="/join">{header("join")}</Link>
+            <Link href="/contact">{header("contact")}</Link>
           </div>
 
           <div className={styles.column}>

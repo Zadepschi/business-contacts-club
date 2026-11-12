@@ -1,0 +1,165 @@
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 14px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.field {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+}
+
+.field label {
+  color: #303b45;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.field input,
+.field textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 12px;
+  color: #303b45;
+  font: inherit;
+  font-size: 14px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.field input {
+  height: 42px;
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-color: #b48a4c;
+  box-shadow: 0 0 0 2px rgba(180, 138, 76, 0.1);
+}
+
+.field textarea {
+  height: 85px;
+  min-height: 85px;
+  resize: vertical;
+}
+
+.field:nth-child(3),
+.field:nth-child(4) {
+  grid-column: 1 / -1;
+}
+
+.submitButton {
+  grid-column: 1 / -1;
+  justify-self: stretch;
+  min-height: 44px;
+  padding: 10px 20px;
+  color: #17202b;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  background: linear-gradient(
+    110deg,
+    #c9973e 0%,
+    #f8e4ad 25%,
+    #d5a64e 50%,
+    #fff0bd 75%,
+    #c9973e 100%
+  );
+  background-size: 250% 100%;
+  animation: goldShimmer 4s ease-in-out infinite;
+  border: 1px solid rgba(255, 235, 190, 0.8);
+  border-radius: 7px;
+  cursor: pointer;
+  box-shadow: 0 7px 22px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.submitButton:hover {
+  animation-duration: 1.5s;
+  transform: translateY(-2px);
+  box-shadow: 0 9px 28px rgba(213, 166, 78, 0.35);
+}
+
+.submitButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  animation: none;
+  transform: none;
+  box-shadow: none;
+}
+
+@keyframes goldShimmer {
+  0% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .submitButton {
+    animation: none;
+    transition: none;
+  }
+
+  .submitButton:hover {
+    transform: none;
+  }
+}
+
+.successMessage {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 18px;
+  background: var(--cream);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.successMessage h3 {
+  margin-top: 0;
+  color: #172d3f;
+  font-size: 19px;
+}
+
+.successMessage p {
+  margin-bottom: 0;
+  color: #46515b;
+  line-height: 1.5;
+}
+
+.errorMessage {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: #a52d2d;
+  font-size: 13px;
+}
+
+@media (max-width: 520px) {
+  .form {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .field:nth-child(3),
+  .field:nth-child(4),
+  .submitButton {
+    grid-column: auto;
+  }
+
+  .field textarea {
+    height: 100px;
+    min-height: 100px;
+  }
+}

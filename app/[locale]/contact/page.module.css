@@ -1,0 +1,302 @@
+
+.pageShell {
+  position: relative;
+  overflow: hidden;
+  padding: 48px 0 0;
+  background: #fbf9f5;
+}
+
+.pageHeading {
+  position: relative;
+  z-index: 1;
+  padding: 10px 20px 38px;
+  text-align: center;
+}
+
+.eyebrow,
+.sectionEyebrow {
+  margin: 0 0 10px;
+  color: #a77b3d;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.pageHeading h1 {
+  margin: 0 0 12px;
+  color: #142b3d;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(42px, 5vw, 62px);
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.pageHeading > p:last-child {
+  max-width: 620px;
+  margin: 0 auto;
+  color: #46515b;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* Контактная сетка */
+
+.contactGrid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.08fr);
+  gap: 42px;
+  align-items: start;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding-bottom: 45px;
+}
+
+/* Левая колонка */
+
+.contactDetails {
+  padding: 12px 0;
+}
+
+.contactDetails h2,
+.formPanel h2 {
+  margin: 0 0 24px;
+  color: #142b3d;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(28px, 3vw, 36px);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0 0 20px;
+}
+
+.contactIcon {
+  display: flex;
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  color: #a77b3d;
+  background: #f7e8bd;
+  border-radius: 10px;
+}
+
+.contactIcon svg {
+  width: 23px;
+  height: 23px;
+}
+
+.itemLabel {
+  display: block;
+  margin-bottom: 4px;
+  color: #68727a;
+  font-size: 13px;
+}
+
+.contactItem a {
+  color: #172d3f;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.contactItem a:hover {
+  color: #a77b3d;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* Социальные сети */
+
+.socialSection {
+  margin-top: 28px;
+  padding-top: 23px;
+  border-top: 1px solid #e9dfcf;
+}
+
+.socialTitle {
+  margin: 0 0 18px;
+  color: #243b4d;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+}
+
+.socialLinks {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 14px;
+}
+
+.socialLinks a {
+  position: relative;
+  display: inline-flex;
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+
+  color: #e5bd70;
+  background: linear-gradient(145deg, #172f43, #0b1927);
+  border: 1px solid rgba(212, 169, 88, 0.75);
+  border-radius: 50%;
+
+  text-decoration: none;
+  box-shadow: 0 3px 9px rgba(11, 25, 39, 0.12);
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.socialLinks a svg {
+  display: block;
+  width: 22px;
+  height: 22px;
+  color: currentColor;
+  transition: transform 0.25s ease;
+}
+
+.socialLinks a:hover {
+  color: #0b1927;
+  background: linear-gradient(135deg, #f5dda7, #c99d50);
+  border-color: #c99d50;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(177, 135, 72, 0.25);
+}
+
+.socialLinks a:hover svg {
+  transform: scale(1.12);
+}
+
+.socialLinks a:focus-visible {
+  outline: 3px solid rgba(201, 157, 80, 0.45);
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .socialLinks a,
+  .socialLinks a svg {
+    transition: none;
+  }
+}
+
+/* Правая колонка — форма */
+
+.formPanel {
+  min-width: 0;
+  padding: 25px 27px;
+  background: #fffdf9;
+  border: 1px solid #eadfce;
+  border-radius: 14px;
+  box-shadow: 0 5px 22px rgba(63, 49, 29, 0.04);
+}
+
+.formPanel h2 {
+  margin-bottom: 10px;
+}
+
+.formLead {
+  margin: 0 0 20px;
+  color: #5c6871;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+/* Золотой рисунок Бруклинского моста и Манхэттена */
+
+.bridgeArtwork {
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: -10px 0 0;
+  opacity: 0.85;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.bridgeArtwork img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 320px;
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+/* Адаптация под планшеты и телефоны */
+
+@media (max-width: 760px) {
+  .pageShell {
+    padding-top: 30px;
+  }
+
+  .pageHeading {
+    padding-bottom: 26px;
+  }
+
+  .pageHeading h1 {
+    font-size: clamp(38px, 10vw, 48px);
+  }
+
+  .contactGrid {
+    grid-template-columns: 1fr;
+    gap: 26px;
+    padding-bottom: 30px;
+  }
+
+  .contactDetails {
+    padding: 0;
+  }
+
+  .contactDetails h2,
+  .formPanel h2 {
+    font-size: 29px;
+  }
+
+  .formPanel {
+    padding: 22px 18px;
+  }
+
+  .socialLinks {
+    gap: 9px;
+  }
+
+  .socialLinks a {
+    min-height: 44px;
+  }
+
+  .bridgeArtwork {
+    margin-top: 0;
+  }
+
+  .bridgeArtwork img {
+    max-height: 180px;
+  }
+}
+
+@media (max-width: 390px) {
+  .socialLinks {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .socialLinks a {
+    width: 100%;
+  }
+}

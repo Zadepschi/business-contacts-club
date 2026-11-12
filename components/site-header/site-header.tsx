@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -10,31 +11,63 @@ export function SiteHeader() {
   const locale = useLocale();
   const t = useTranslations("Header");
 
+  const nextLocale = locale === "en" ? "ru" : "en";
+  const languageLabel = locale === "en" ? "RU" : "EN";
+
+  const languageSwitcher = (
+    <Link
+      href={pathname}
+      locale={nextLocale}
+      className={styles.languageToggle}
+      aria-label={
+        locale === "en"
+          ? "Switch to Russian"
+          : "Switch to English"
+      }
+    >
+      {languageLabel}
+    </Link>
+  );
+
   return (
     <header className={styles.header}>
       <div className={styles.inner}>
-        <Link
-          className={styles.brand}
-          href="/"
-          aria-label={t("homeLabel")}
+        <div className={styles.brandRow}>
+          <Link
+            className={styles.brand}
+            href="/"
+            aria-label={t("homeLabel")}
+          >
+            <Image
+              src="/logo5.png"
+              alt=""
+              width={130}
+              height={90}
+              priority
+              className={styles.logo}
+            />
+
+            <span className={styles.divider} />
+
+<Image
+  src="/network.png"
+  alt="Brooklyn Bridge Business Networking Club"
+  width={260}
+  height={80}
+  priority
+  className={styles.networkLogo}
+/>
+          </Link>
+
+          <div className={styles.mobileLanguageSwitcher}>
+            {languageSwitcher}
+          </div>
+        </div>
+
+        <nav
+          className={styles.nav}
+          aria-label={t("navigationLabel")}
         >
-          <Image
-            src="/logo-bridge3.png"
-            alt=""
-            width={130}
-            height={90}
-            priority
-            className={styles.logo}
-          />
-
-          <span className={styles.divider} />
-
-          <span className={styles.brandName}>
-            Brooklyn Bridge
-          </span>
-        </Link>
-
-        <nav className={styles.nav} aria-label={t("navigationLabel")}>
           <Link
             href="/"
             className={pathname === "/" ? styles.active : ""}
@@ -59,27 +92,17 @@ export function SiteHeader() {
             {t("join")}
           </Link>
 
-          <span className={styles.languageSwitcher}>
-            <Link
-              href={pathname}
-              locale="en"
-              className={locale === "en" ? styles.languageActive : ""}
-              aria-current={locale === "en" ? "page" : undefined}
-            >
-              EN
-            </Link>
+          <Link
+            href="/contact"
+            className={pathname === "/contact" ? styles.active : ""}
+            aria-current={pathname === "/contact" ? "page" : undefined}
+          >
+            {t("contact")}
+          </Link>
 
-            <span aria-hidden="true">|</span>
-
-            <Link
-              href={pathname}
-              locale="ru"
-              className={locale === "ru" ? styles.languageActive : ""}
-              aria-current={locale === "ru" ? "page" : undefined}
-            >
-              RU
-            </Link>
-          </span>
+          <div className={styles.desktopLanguageSwitcher}>
+            {languageSwitcher}
+          </div>
         </nav>
       </div>
     </header>

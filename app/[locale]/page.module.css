@@ -44,7 +44,7 @@
   max-width: 700px;
   margin: 0 0 22px;
   color: #fffaf1;
-  font-family: "Playfair Display", Georgia, serif;
+  font-family: "Montserrat", Arial, sans-serif;
   font-size: clamp(48px, 6vw, 78px);
   font-weight: 600;
   line-height: 1.08;
@@ -188,7 +188,7 @@
 
 .feature strong {
   color: #202b38;
-  font-family: "Playfair Display", Georgia, serif;
+  font-family:"Montserrat", Arial, sans-serif;
   font-size: 22px;
   font-weight: 600;
 }
@@ -229,7 +229,7 @@
 .homeMeetups h2 {
   margin: 0 0 18px;
   color: #fffaf1;
-  font-family: "Playfair Display", Georgia, serif;
+  font-family: "Montserrat", Arial, sans-serif;
   font-size: clamp(36px, 4vw, 52px);
   font-weight: 500;
   line-height: 1.1;
