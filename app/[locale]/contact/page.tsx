@@ -111,7 +111,6 @@ export default async function ContactPage() {
   return (
     <main className={styles.pageShell}>
       <section className={styles.pageHeading}>
-        <p className={styles.eyebrow}>BROOKLYN BRIDGE · NEW YORK</p>
         <h1>{t("title")}</h1>
         <p>{t("lead")}</p>
       </section>

@@ -48,7 +48,6 @@ export default async function AboutPage() {
   return (
     <div className={styles.pageShell}>
       <section className={`container ${styles.pageHeading}`}>
-        <p className="eyebrow">{t("eyebrow")}</p>
         <h1>{t("title")}</h1>
         <p className={styles.pageLead}>{t("lead")}</p>
       </section>
@@ -56,7 +55,6 @@ export default async function AboutPage() {
       <section className={`container ${styles.activitySection}`}>
         <div className={styles.sectionHeading}>
           <div>
-            <p className="eyebrow">{t("activities.eyebrow")}</p>
             <h2>{t("activities.title")}</h2>
           </div>
           <p>{t("activities.description")}</p>

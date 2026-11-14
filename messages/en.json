@@ -3,7 +3,7 @@
   "Metadata": {
     "home": {
       "title": "Business Networking Club in New York",
-      "description": "A community of businessmen  in New York built around meaningful connections, shared experiences and business relationships."
+      "description": "A community of business owners in New York built around meaningful connections, shared experiences and business relationships."
     },
     "about": {
       "title": "About the Club",
@@ -41,7 +41,7 @@
     },
     "meetups": {
       "eyebrow": "We Meet Once a Month",
-      "title": "Business Brings Us Together. People Make It Meaningful.",
+      "title": "Business unites. Communication bring closer.",
       "text": "Restaurant dinners, sauna outings, sports and trips outside the city — we choose settings where it's easy to connect and enjoy time together.",
       "link": "More About Our Gatherings"
     }
@@ -49,7 +49,7 @@
   "About": {
     "eyebrow": "Who We Are and What We Do",
     "title": "About the Club",
-    "lead": "A business networking club is a community of businessmen  where members meet people from across the business world, talk about their ventures, share experiences and practical advice, help one another identify challenges and growth opportunities, and discover new ways to collaborate.",
+    "lead": "A business networking club is a community of entrepreneurs where members meet people from across the business world, discuss their ventures, share experiences and practical advice, help one another identify challenges and growth opportunities, and discover new ways to collaborate.",
     "activities": {
       "eyebrow": "We Meet Once a Month",
       "title": "What We Do",
@@ -83,7 +83,7 @@
   "Join": {
     "eyebrow": "Join the Community",
     "title": "How to Join",
-    "lead": "Membership is open to businessmen who are actively running a business. New members are welcomed after a personal introduction. This helps us maintain a strong community and make sure you'll enjoy connecting with fellow members.",
+    "lead": "Membership is open to business owners who are actively running a business. New members are welcomed after a personal introduction. This helps us maintain a strong community and make sure you'll enjoy connecting with fellow members.",
     "steps": [
       {
         "title": "Meet Us in Person",
@@ -160,7 +160,7 @@
     "languageLabel": "Select language"
   },
   "Footer": {
-    "description": "A business networking club. A nonprofit community of businessmen brought together through conversation and mutual support.",
+    "description": "A business networking club. A nonprofit community of business owners brought together through conversation and mutual support.",
     "navigation": "Navigation",
     "community": "Our Community",
     "tagline": "Real Conversations. Meaningful Connections.",

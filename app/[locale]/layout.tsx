@@ -37,7 +37,7 @@ export async function generateMetadata({
   });
 
   return {
-    metadataBase: new URL("https://brooklyn-bridge.us"),
+    metadataBase: new URL("https://brooklynbusiness.club"),
 
     title: {
       default: t("home.title"),

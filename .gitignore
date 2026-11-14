@@ -4,3 +4,9 @@ out
 .env*
 .DS_Store
 *.log
+
+# Local Netlify folder
+.netlify
+/dist/
+.vinext/
+.cloudflare/

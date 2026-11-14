@@ -104,10 +104,7 @@ export default async function HomePage() {
         <div className={styles.heroShade} />
 
         <div className={`container ${styles.heroContent}`}>
-          <p className={styles.eyebrow}>
-            {t("eyebrow")}
-          </p>
-
+       
           <h1>
             {t("title")}
           </h1>

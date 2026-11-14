@@ -43,7 +43,7 @@ export async function SiteFooter() {
               aria-label={header("homeLabel")}
             >
               <Image
-                src="/logo5.png"
+                src="/logo-club.png"
                 alt=""
                 width={84}
                 height={84}
@@ -51,7 +51,7 @@ export async function SiteFooter() {
               />
               <span className={styles.divider} />
               <Image
-  src="/network.png"
+  src="/BrooklynClub.png"
   alt="Brooklyn Bridge Business Networking Club"
   width={260}
   height={80}

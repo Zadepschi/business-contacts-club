@@ -39,7 +39,7 @@ export function SiteHeader() {
             aria-label={t("homeLabel")}
           >
             <Image
-              src="/logo5.png"
+              src="/logo-club.png"
               alt=""
               width={130}
               height={90}
@@ -50,7 +50,7 @@ export function SiteHeader() {
             <span className={styles.divider} />
 
 <Image
-  src="/network.png"
+  src="/BrooklynClub.png"
   alt="Brooklyn Bridge Business Networking Club"
   width={260}
   height={80}
