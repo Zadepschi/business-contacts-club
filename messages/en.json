@@ -1,22 +1,22 @@
 
 {
   "Metadata": {
-    "home": {
-      "title": "Business Networking Club in New York",
-      "description": "A community of business owners in New York built around meaningful connections, shared experiences and business relationships."
-    },
-    "about": {
-      "title": "About the Club",
-      "description": "Discover Brooklyn Bridge, a business networking club for businessmen  in New York. Meet new people, exchange ideas and explore opportunities to collaborate."
-    },
-    "join": {
-      "title": "How to Join",
-      "description": "Learn how to join Brooklyn Bridge, a business networking club for Russian-speaking businessmen  in New York. Get acquainted, attend events and connect with fellow business owners."
-    },
-    "contact": {
-      "title": "Contact Brooklyn Bridge",
-      "description": "Contact Brooklyn Bridge, a business networking club in Brooklyn, New York. Connect with our community by phone, WhatsApp, Telegram or Facebook."
-    }
+  "home": {
+    "title": "Business Networking Club in New York",
+    "description": "A community of business owners in New York built around meaningful connections, shared experiences and business relationships."
+  },
+  "about": {
+    "title": "About the Club",
+    "description": "Discover Brooklyn Business Club, a business networking club for business owners in New York. Meet new people, exchange ideas and explore opportunities to collaborate."
+  },
+  "join": {
+    "title": "How to Join",
+    "description": "Learn how to join Brooklyn Business Club, a business networking club for Russian-speaking business owners in New York. Get acquainted, attend events and connect with fellow entrepreneurs."
+  },
+  "contact": {
+    "title": "Contact Brooklyn Business Club",
+    "description": "Contact Brooklyn Business Club, a business networking club in Brooklyn, New York. Connect with our community by phone, WhatsApp, Telegram or Facebook."
+  }
   },
   "Home": {
     "eyebrow": "A Business Networking Community",
@@ -41,7 +41,7 @@
     },
     "meetups": {
       "eyebrow": "We Meet Once a Month",
-      "title": "Business unites. Communication bring closer.",
+      "title": "Business unites. Communication brings us closer.",
       "text": "Restaurant dinners, sauna outings, sports and trips outside the city — we choose settings where it's easy to connect and enjoy time together.",
       "link": "More About Our Gatherings"
     }
@@ -150,15 +150,15 @@
     "english": "English",
     "russian": "Russian"
   },
-  "Header": {
-    "home": "Home",
-    "about": "About Us",
-    "join": "How to Join",
-    "contact": "Contact",
-    "homeLabel": "Brooklyn Bridge — Home",
-    "navigationLabel": "Main navigation",
-    "languageLabel": "Select language"
-  },
+"Header": {
+  "home": "Home",
+  "about": "About Us",
+  "join": "How to Join",
+  "contact": "Contact",
+  "homeLabel": "Brooklyn Business Club — Home",
+  "navigationLabel": "Main navigation",
+  "languageLabel": "Select language"
+},
   "Footer": {
     "description": "A business networking club. A nonprofit community of business owners brought together through conversation and mutual support.",
     "navigation": "Navigation",
@@ -166,6 +166,359 @@
     "tagline": "Real Conversations. Meaningful Connections.",
     "facebook": "Find Us on Facebook",
     "copyright": "All rights reserved.",
-    "bottomTagline": "Bringing People Together. Creating Opportunities."
-  }
+    "bottomTagline": "Bringing People Together. Creating Opportunities.",
+    "legal": "Legal",
+"terms": "Terms & Conditions",
+"privacyPolicy": "Privacy Policy",
+"cookiePolicy": "Cookie Policy",
+"communityGuidelines": "Community Guidelines"
+  },
+
+
+"PrivacyPolicy": {
+  "title": "Privacy Policy",
+  "lastUpdated": "Last Updated: November 14, 2026",
+  "introductionLabel": "OVERVIEW",
+  "introduction": "Brooklyn Business Club (\"we,\" \"our,\" or \"us\") respects your privacy and is committed to protecting the personal information you share with us through our website. This Privacy Policy explains what information we collect, how we use it, and how we protect it when you visit https://brooklynbusiness.club. Brooklyn Business Club is currently operated as a club and is not a separately registered legal entity. By using our website, you acknowledge this Privacy Policy.",
+  "sections": [
+    {
+      "title": "Information We Collect",
+      "paragraphs": [
+        "We may collect the following types of information:",
+        "2.1 Information You Provide. When you contact us through our website, you may provide your name, email address, phone number (optional), and the message or inquiry you submit. You are responsible for ensuring that the information you provide is accurate.",
+        "2.2 Automatically Collected Information. When you visit our website, certain technical information may be processed automatically by our hosting and infrastructure providers. This may include your IP address, browser type and version, device and operating system information, pages visited, date and time of access, and basic website security and server logs. This information may be processed to operate, maintain, and protect the website."
+      ]
+    },
+    {
+      "title": "How We Use Your Information",
+      "paragraphs": [
+        "We may use the information we collect to respond to inquiries and messages; communicate with visitors and people interested in the club; provide information about club activities and opportunities; maintain and improve our website; protect the website against spam, abuse, and unauthorized activity; and comply with applicable legal obligations.",
+        "We do not sell your personal information."
+      ]
+    },
+    {
+      "title": "Third-Party Services",
+      "paragraphs": [
+        "Our website uses or may link to third-party services that have their own privacy policies.",
+        "4.1 Formspree. We use Formspree to process messages submitted through our website contact form. Information submitted through the form may be processed by Formspree in accordance with its privacy policy: https://formspree.io/legal/privacy-policy/",
+        "4.2 Cloudflare. Our website uses Cloudflare infrastructure and related services for website delivery, performance, and security. Cloudflare may process technical information, including IP addresses and security-related data, as part of providing these services. For more information: https://www.cloudflare.com/privacypolicy/",
+        "4.3 Social Media and Messaging Platforms. Our website may contain links to third-party platforms, including Facebook, Telegram, and WhatsApp. If you follow these links or communicate with us through these platforms, your information will be handled according to the privacy policies and terms of those respective services. We do not control how these third-party platforms collect or process your information."
+      ]
+    },
+    {
+      "title": "Cookies and Similar Technologies",
+      "paragraphs": [
+        "Our website and its infrastructure providers may use cookies or similar technologies that are necessary for website functionality, security, and performance.",
+        "At the time of this Privacy Policy's publication, we do not use Google Analytics.",
+        "If we introduce analytics, advertising technologies, or additional tracking services in the future, we will update this Privacy Policy as appropriate and provide any notices or choices required by applicable law."
+      ]
+    },
+    {
+      "title": "How We Share Your Information",
+      "paragraphs": [
+        "We may share personal information only when reasonably necessary: with service providers that help us operate and maintain our website; when required by law, regulation, or legal process; to protect our rights, visitors, or website security; or with your consent or at your direction.",
+        "We do not sell or rent personal information to third parties."
+      ]
+    },
+    {
+      "title": "Data Storage and Retention",
+      "paragraphs": [
+        "We retain personal information only for as long as reasonably necessary for the purposes described in this Privacy Policy, including responding to inquiries, maintaining records, resolving disputes, and meeting legal obligations.",
+        "Information processed by third-party service providers may be retained according to their own retention policies."
+      ]
+    },
+    {
+      "title": "Data Security",
+      "paragraphs": [
+        "We take reasonable measures to protect the information submitted through our website against unauthorized access, disclosure, alteration, or destruction.",
+        "However, no method of electronic transmission or storage is completely secure. Therefore, we cannot guarantee absolute security."
+      ]
+    },
+    {
+      "title": "Your Privacy Rights",
+      "paragraphs": [
+        "Depending on your location and applicable law, you may have rights regarding your personal information, including the right to request access to personal information we hold about you; request correction of inaccurate information; request deletion of personal information; object to or restrict certain processing activities; and withdraw consent where processing is based on consent.",
+        "To make a privacy-related request, please contact us using the phone number provided below."
+      ]
+    },
+    {
+      "title": "Children's Privacy",
+      "paragraphs": [
+        "Our website is not directed toward children under the age of 13, and we do not knowingly collect personal information directly from children under 13.",
+        "If we become aware that personal information has been collected from a child under 13 without appropriate authorization, we will take reasonable steps to address the situation."
+      ]
+    },
+    {
+      "title": "External Links",
+      "paragraphs": [
+        "Our website may contain links to external websites and services.",
+        "We are not responsible for the privacy practices, content, or security of third-party websites. We encourage visitors to review the privacy policies of any external websites they visit."
+      ]
+    },
+    {
+      "title": "Changes to This Privacy Policy",
+      "paragraphs": [
+        "We may update this Privacy Policy from time to time to reflect changes in our website, services, technology, or applicable legal requirements.",
+        "Any updates will be published on this page with a revised \"Last Updated\" date.",
+        "We encourage visitors to review this page periodically."
+      ]
+    }
+  ],
+  "contactEyebrow": "GET IN TOUCH",
+  "contactTitle": "Contact Information",
+  "contactDescription": "If you have questions or concerns about this Privacy Policy or the handling of your personal information, you may contact Brooklyn Business Club:",
+  "organizationLabel": "Organization",
+  "locationLabel": "Location",
+  "phoneLabel": "Phone"
+},
+"TermsConditions": {
+  "title": "Terms & Conditions",
+  "lastUpdated": "Last Updated: November 14, 2026",
+  "introduction": "Welcome to Brooklyn Business Club. These Terms & Conditions govern your access to and use of https://brooklynbusiness.club, including information, contact forms, and links to our community platforms. By accessing or using this website, you agree to these Terms. If you do not agree, please do not use the website.",
+  "sections": [
+    {
+      "title": "About Brooklyn Business Club",
+      "paragraphs": [
+        "Brooklyn Business Club is a business networking club that brings business owners and professionals together through conversations, networking, and mutual support.",
+        "At the time of publication, Brooklyn Business Club operates as a club and is not a separately registered legal entity."
+      ]
+    },
+    {
+      "title": "Use of the Website",
+      "paragraphs": [
+        "You agree to use this website only for lawful purposes and in a way that does not interfere with its operation or the experience of other visitors.",
+        "You must not attempt to gain unauthorized access to the website, introduce malicious code, submit misleading information, or use the website for spam, harassment, or unlawful activities."
+      ]
+    },
+    {
+      "title": "Information on the Website",
+      "paragraphs": [
+        "The website provides general information about Brooklyn Business Club, its community, networking opportunities, and activities.",
+        "We make reasonable efforts to keep the information accurate and up to date. However, we do not guarantee that all information is complete, current, or free from errors."
+      ]
+    },
+    {
+      "title": "Membership and Participation",
+      "paragraphs": [
+        "Submitting an inquiry or expressing interest in the club does not automatically establish membership or guarantee acceptance into any event or activity.",
+        "Participation in club activities may be subject to separate requirements, registration procedures, availability, or event-specific conditions."
+      ]
+    },
+    {
+      "title": "Events and Activities",
+      "paragraphs": [
+        "Information about events, meetings, and networking activities may be published on our website or communicated through third-party platforms.",
+        "Event dates, locations, formats, and other details may change. Any applicable registration requirements or fees will be communicated separately.",
+        "Participation in an event is subject to the instructions and rules communicated by its organizers."
+      ]
+    },
+    {
+      "title": "User Submissions and Communications",
+      "paragraphs": [
+        "When you submit a message through our contact form or communicate with us through linked platforms, you agree to provide accurate information and communicate respectfully.",
+        "You must not submit unlawful, threatening, defamatory, fraudulent, or intentionally misleading content.",
+        "Submitting information through the website does not create a confidential, professional, employment, partnership, or agency relationship."
+      ]
+    },
+    {
+      "title": "Intellectual Property",
+      "paragraphs": [
+        "Unless otherwise indicated, website content, including text, graphics, logos, design elements, and other materials, is owned by or used with permission by Brooklyn Business Club.",
+        "You may view and share links to publicly available website pages for personal and informational purposes. You may not reproduce, modify, distribute, or commercially exploit website materials without prior permission, except where permitted by law."
+      ]
+    },
+    {
+      "title": "Third-Party Services and Links",
+      "paragraphs": [
+        "Our website may contain links to third-party services, including Facebook, Telegram, WhatsApp, Formspree, and other external websites.",
+        "These services are operated independently and are subject to their own terms and privacy policies. We do not control and are not responsible for their content, availability, or practices."
+      ]
+    },
+    {
+      "title": "Disclaimer",
+      "paragraphs": [
+        "The website and its content are provided on an 'as is' and 'as available' basis.",
+        "Information shared through the website or club activities is for general informational and networking purposes. It should not be treated as legal, financial, tax, investment, or other professional advice.",
+        "We do not guarantee specific business results, partnerships, employment opportunities, referrals, or financial outcomes from participation in the club."
+      ]
+    },
+    {
+      "title": "Limitation of Liability",
+      "paragraphs": [
+        "To the extent permitted by applicable law, Brooklyn Business Club shall not be liable for indirect, incidental, special, or consequential damages arising from the use of, or inability to use, the website or reliance on information provided through it.",
+        "Nothing in these Terms excludes or limits liability where such exclusion or limitation is prohibited by applicable law."
+      ]
+    },
+    {
+      "title": "Changes to the Website and These Terms",
+      "paragraphs": [
+        "We may modify, suspend, or discontinue any part of the website at any time.",
+        "We may also update these Terms from time to time. Changes will be published on this page with a revised Last Updated date. Continued use of the website after changes are published means that you acknowledge the updated Terms."
+      ]
+    },
+    {
+      "title": "Governing Law",
+      "paragraphs": [
+        "These Terms shall be interpreted in accordance with applicable laws. Any mandatory consumer protection or other legal rights that apply to you under the laws of your jurisdiction remain unaffected."
+      ]
+    },
+    {
+      "title": "Contact Information",
+      "paragraphs": [
+        "If you have questions about these Terms & Conditions, you may contact Brooklyn Business Club using the phone number below.",
+        "Brooklyn Business Club, Brooklyn, New York, USA. Phone: +1 (646) 606-7303."
+      ]
+    }
+  ],
+  "contactTitle": "Contact Information",
+  "contactDescription": "If you have questions about these Terms & Conditions, please contact us:",
+  "phoneLabel": "Phone"
+},
+"CookiePolicy": {
+    "title": "Cookie Policy",
+    "lastUpdated": "Last Updated: November 14, 2026",
+    "introduction": "This Cookie Policy explains how Brooklyn Business Club uses cookies and similar technologies when you visit https://brooklynbusiness.club. We aim to be transparent about the technologies used on our website.",
+    "sections": [
+      {
+        "title": "1. What Are Cookies?",
+        "paragraphs": [
+          "Cookies are small text files that websites may store on your device when you visit them. They help websites function, remember certain settings, and support security and performance.",
+          "Similar technologies may include pixels, scripts, local storage, and other tools that store or access information on your device."
+        ]
+      },
+      {
+        "title": "2. How We Use Cookies",
+        "paragraphs": [
+          "Our website and its infrastructure providers may use cookies or similar technologies where necessary to operate the website, support security, prevent abuse, and maintain performance.",
+          "The specific cookies or technologies used may depend on the services and features active on the website."
+        ]
+      },
+      {
+        "title": "3. Third-Party Services",
+        "paragraphs": [
+          "We use Cloudflare infrastructure to help deliver, maintain, and protect our website. Cloudflare may use cookies or similar technologies for security and performance purposes. More information is available in the Cloudflare Privacy Policy: https://www.cloudflare.com/privacypolicy/.",
+          "Our website contact form is processed by Formspree. When you submit the form, Formspree may process technical information in accordance with its own policies: https://formspree.io/legal/privacy-policy/.",
+          "Our website may also link to third-party services such as Facebook, Telegram, and WhatsApp. Those services may use their own cookies and tracking technologies when you visit their platforms."
+        ]
+      },
+      {
+        "title": "4. Analytics and Advertising",
+        "paragraphs": [
+          "At the time of publication of this policy, we do not use Google Analytics on our website.",
+          "If we introduce analytics, advertising, or other tracking technologies in the future, we will update this policy and provide any notices or consent options required by applicable law."
+        ]
+      },
+      {
+        "title": "5. Managing Cookies",
+        "paragraphs": [
+          "You can manage or delete cookies through your browser settings. Most browsers allow you to block cookies, delete existing cookies, or receive a notification before a cookie is stored.",
+          "Please note that blocking certain cookies may affect website functionality, security, or performance."
+        ]
+      },
+      {
+        "title": "6. Changes to This Cookie Policy",
+        "paragraphs": [
+          "We may update this Cookie Policy when our website, services, or use of cookies changes, or when applicable legal requirements change.",
+          "Any updates will be published on this page with a revised Last Updated date."
+        ]
+      },
+      {
+        "title": "7. Contact Information",
+        "paragraphs": [
+          "If you have questions about this Cookie Policy or our use of cookies and similar technologies, you may contact Brooklyn Business Club using the information below."
+        ]
+      }
+    ],
+    "contactTitle": "Contact Information",
+    "contactDescription": "For questions about this policy, please contact us:",
+    "phoneLabel": "Phone"
+},
+"CommunityGuidelines": {
+    "title": "Community Guidelines",
+    "lastUpdated": "Last Updated: November 15, 2026",
+    "introduction": "Brooklyn Business Club brings business owners and professionals together to build meaningful connections, exchange ideas, and support one another. These Community Guidelines explain the standards of conduct we expect from people participating in our community and using our website.",
+    "sections": [
+      {
+        "title": "1. Respectful Communication",
+        "paragraphs": [
+          "Treat all members, visitors, guests, and organizers with courtesy and respect.",
+          "Communicate professionally and constructively, even when opinions or business perspectives differ.",
+          "Harassment, bullying, intimidation, discrimination, personal attacks, and threatening behavior are not acceptable."
+        ]
+      },
+      {
+        "title": "2. Professional Networking",
+        "paragraphs": [
+          "Our community is intended to encourage genuine professional relationships, collaboration, and the exchange of useful knowledge.",
+          "Be honest about your professional background, business, products, services, and intentions.",
+          "Respect other people's time, boundaries, and communication preferences. Do not pressure anyone to enter a business relationship, purchase a product, or accept an offer."
+        ]
+      },
+      {
+        "title": "3. Promotion and Advertising",
+        "paragraphs": [
+          "Business promotion should be relevant, appropriate, and respectful of the community's purpose.",
+          "Do not use the community primarily for unsolicited advertising, repetitive sales messages, mass solicitation, or spam.",
+          "Do not misrepresent products, services, business opportunities, partnerships, or expected results.",
+          "Any promotional activity may be subject to additional requirements or approval from the club organizers."
+        ]
+      },
+      {
+        "title": "4. Privacy and Confidentiality",
+        "paragraphs": [
+          "Respect the privacy of other members and participants.",
+          "Do not share another person's private contact details, personal information, photographs, messages, or business information without their permission.",
+          "Do not record, publish, or distribute private conversations or event-related content involving other participants without appropriate consent."
+        ]
+      },
+      {
+        "title": "5. Prohibited Conduct",
+        "paragraphs": [
+          "The following conduct is not acceptable within the community:",
+          "Fraudulent, deceptive, or misleading statements and activities.",
+          "Threats, harassment, hate speech, discrimination, or abusive language.",
+          "Unlawful activities or promotion of illegal products and services.",
+          "Impersonation, unauthorized use of another person's identity, or misuse of the club's name or branding.",
+          "Spam, scams, malicious links, or attempts to obtain other members' confidential information."
+        ]
+      },
+      {
+        "title": "6. Events and Participation",
+        "paragraphs": [
+          "Participants are expected to behave respectfully at club meetings, networking events, and other activities.",
+          "Follow event instructions and reasonable requests from organizers.",
+          "Respect venue rules, other attendees, and the time allocated for presentations and conversations.",
+          "Participation in club activities may be subject to event-specific registration requirements and conditions."
+        ]
+      },
+      {
+        "title": "7. Reporting Concerns",
+        "paragraphs": [
+          "If you experience or witness behavior that violates these guidelines, please contact the club organizers.",
+          "When reporting a concern, provide a clear description of the situation and any relevant information that can help us understand it.",
+          "We will review concerns at our discretion and may take reasonable steps to address inappropriate conduct."
+        ]
+      },
+      {
+        "title": "8. Enforcement",
+        "paragraphs": [
+          "Brooklyn Business Club organizers reserve the right to take appropriate action when these guidelines are violated.",
+          "Depending on the circumstances, actions may include a warning, removal of inappropriate content, restriction of participation, or exclusion from club activities.",
+          "The club organizers will consider the nature and seriousness of the conduct when deciding what action, if any, is appropriate."
+        ]
+      },
+      {
+        "title": "9. Changes to These Guidelines",
+        "paragraphs": [
+          "We may update these Community Guidelines as the club and its activities develop.",
+          "The updated version will be published on this page with a revised Last Updated date. Continued participation in the community after publication of changes indicates that participants have been informed of the updated guidelines."
+        ]
+      }
+    ],
+    "contactTitle": "Questions or Concerns?",
+    "contactDescription": "If you have questions about these guidelines or wish to report a concern, please contact Brooklyn Business Club:",
+    "phoneLabel": "Phone"
 }
+}
+
+

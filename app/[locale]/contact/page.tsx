@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { ContactForm } from "@/components/contact-form/contact-form";
 import styles from "./page.module.css";
+import Image from "next/image";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -13,7 +14,9 @@ const phone = "+16466067303";
 const socialLinks = {
   telegram: "https://t.me/falcon1633",
   whatsapp: "https://wa.me/16466067303",
-  facebook: "https://www.facebook.com/groups/1549833390202202",
+  facebook:
+    process.env.NEXT_PUBLIC_FACEBOOK_GROUP_URL ||
+    "https://www.facebook.com/groups/1549833390202202",
 };
 
 export async function generateMetadata({
@@ -109,7 +112,7 @@ export default async function ContactPage() {
   const t = await getTranslations("Contact");
 
   return (
-    <main className={styles.pageShell}>
+    <div className={styles.pageShell}>
       <section className={styles.pageHeading}>
         <h1>{t("title")}</h1>
         <p>{t("lead")}</p>
@@ -194,12 +197,15 @@ export default async function ContactPage() {
      
 {/* Декоративный золотой контур Бруклинского моста */}
 <div className={styles.bridgeArtwork} aria-hidden="true">
-  <img
+  <Image
     src="/brooklyn_manhattan_gold.svg"
     alt=""
+    width={1200}
+    height={400}
+    priority
   />
 </div>
 
-    </main>
+    </div>
   );
 }

@@ -17,12 +17,16 @@
   margin-inline: auto;
 }
 
+/* MAIN LAYOUT */
+
 .main {
   display: grid;
-  grid-template-columns: 1.5fr 0.7fr 1fr;
-  gap: 70px;
+  grid-template-columns: 1.6fr 0.75fr 1fr 1fr;
+  gap: 45px;
   padding-block: 54px 46px;
 }
+
+/* BRAND */
 
 .brand {
   max-width: 390px;
@@ -42,6 +46,13 @@
   flex-shrink: 0;
 }
 
+.networkLogo {
+  width: 260px;
+  height: 80px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
 .divider {
   width: 1px;
   height: 43px;
@@ -55,7 +66,7 @@
 
 .brandName {
   color: #e2c58e;
-   font-family: "Montserrat", Arial, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
   font-size: 25px;
   font-weight: 600;
   letter-spacing: 0.015em;
@@ -78,6 +89,8 @@
   line-height: 1.75;
 }
 
+/* COLUMNS */
+
 .column {
   display: flex;
   flex-direction: column;
@@ -86,12 +99,13 @@
   color: #c4cbd2;
   font-size: 14px;
   line-height: 1.6;
+  min-width: 0;
 }
 
 .heading {
   margin: 4px 0 8px;
   color: #e2c58e;
-   font-family: "Montserrat", Arial, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
   font-size: 19px;
   font-weight: 500;
 }
@@ -103,16 +117,24 @@
 
 .column a {
   transition: color 0.2s ease;
+  text-decoration: none;
 }
 
 .column a:hover {
   color: #f0d8a8;
 }
 
+/* FACEBOOK */
+
 .facebook {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
   color: #e2c58e;
   font-weight: 600;
 }
+
+/* BOTTOM */
 
 .bottom {
   display: flex;
@@ -130,10 +152,40 @@
   letter-spacing: 0.04em;
 }
 
-@media (max-width: 900px) {
+/* LEGAL LINKS */
+
+.legalColumn {
+  min-width: 0;
+}
+
+.legalLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+}
+
+.legalLinks a {
+  display: inline-block;
+  color: #c4cbd2;
+  font-size: 14px;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.legalLinks a:hover {
+  color: #f0d8a8;
+}
+
+
+/* TABLET */
+
+@media (max-width: 1050px) {
   .main {
-    grid-template-columns: 1.3fr 1fr;
-    gap: 38px;
+    grid-template-columns: 1.3fr 1fr 1fr;
+    gap: 32px;
   }
 
   .brand {
@@ -142,63 +194,187 @@
   }
 }
 
-@media (max-width: 600px) {
+/* MOBILE */
+
+@media (max-width: 760px) {
   .container {
-    width: min(100% - 36px, 560px);
+    width: calc(100% - 36px);
   }
 
   .main {
-    grid-template-columns: 1fr 1fr;
-    gap: 32px 20px;
-    padding-block: 38px 32px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px 22px;
+    padding-block: 28px 22px;
   }
+
+  /* BRAND */
 
   .brand {
     grid-column: 1 / -1;
+    max-width: 100%;
   }
 
-  .brandName {
-    font-size: 22px;
+  .logoLink {
+    gap: 11px;
+    margin-bottom: 11px;
   }
 
   .logo {
-    width: 52px;
-    height: 52px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .divider {
+    height: 34px;
+  }
+
+  .networkLogo {
+    width: 185px;
+    height: 55px;
+  }
+
+  .description {
+    max-width: 480px;
+    font-size: 12px;
+    line-height: 1.55;
+  }
+
+  /* NAVIGATION AND COMMUNITY */
+
+  .column {
+    gap: 8px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .heading {
+    margin: 0 0 4px;
+    font-size: 16px;
+  }
+
+  .column p {
+    max-width: 100%;
+    margin: 0 0 2px;
+  }
+
+  /* LEGAL */
+
+  .legalColumn {
+    grid-column: 1 / -1;
+    display: block;
+    padding-top: 15px;
+    border-top: 1px solid rgba(226, 197, 142, 0.18);
+  }
+
+  .legalColumn .heading {
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+  .legalLinks {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 17px;
+    row-gap: 9px;
+  }
+
+  .legalLinks a {
+    display: inline-block;
+    color: #c4cbd2;
+    font-size: 11px;
+    line-height: 1.4;
+    white-space: nowrap;
+  }
+
+  .legalLinks a:hover {
+    color: #f0d8a8;
+  }
+
+  /* FACEBOOK */
+
+  .facebook {
+    font-size: 12px;
+  }
+
+  .arrowIcon {
+    width: 14px;
+    height: 14px;
+  }
+
+  /* BOTTOM */
+
+  .bottom {
+    min-height: auto;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+    padding-block: 12px;
+    font-size: 10px;
+    line-height: 1.5;
+  }
+
+  .tagline {
+    font-size: 10px;
+  }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 380px) {
+  .container {
+    width: calc(100% - 28px);
+  }
+
+  .main {
+    gap: 21px 15px;
+    padding-block: 23px 18px;
+  }
+
+  .logo {
+    width: 43px;
+    height: 43px;
+  }
+
+  .networkLogo {
+    width: 155px;
+    height: 46px;
+  }
+
+  .description {
+    font-size: 11px;
   }
 
   .column {
-    gap: 10px;
-  }
-
-  .bottom {
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: center;
+    font-size: 11px;
     gap: 7px;
-    padding-block: 17px;
+  }
+
+  .heading {
+    font-size: 15px;
+  }
+
+  .legalLinks {
+    column-gap: 13px;
+    row-gap: 8px;
+  }
+
+  .legalLinks a {
+    font-size: 10px;
   }
 }
 
-@media (max-width: 380px) {
-  .main {
-    grid-template-columns: 1fr;
-  }
-
-  .brand {
-    grid-column: auto;
-  }
-}
+/* ACCESSIBILITY */
 
 @media (prefers-reduced-motion: reduce) {
-  .column a {
+  .column a,
+  .legalLinks a,
+  .arrowIcon {
     transition: none;
   }
 }
 
-
-
-
-/* Тонкая стрелка в ссылке Facebook */
+/* FACEBOOK ARROW */
 
 .arrowIcon {
   display: inline-block;

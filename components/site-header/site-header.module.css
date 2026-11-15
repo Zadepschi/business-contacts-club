@@ -236,11 +236,25 @@
    TABLET — ПЛАНШЕТЫ
 ======================================== */
 
-@media (max-width: 900px) {
+@media (min-width: 641px) and (max-width: 1055px) {
   .inner {
     width: calc(100% - 40px);
-    min-height: 96px;
-    gap: 20px;
+    padding: 12px 0 16px;
+    min-height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  /* Первая строка: логотипы и переключатель */
+
+  .brandRow {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .logo {
@@ -252,12 +266,29 @@
     gap: 14px;
   }
 
-  .brandName {
-    font-size: 25px;
+  .networkLogo {
+    width: 260px;
+    height: 85px;
   }
 
+  /* Переключатель языка */
+
+  .mobileLanguageSwitcher {
+    display: flex;
+    align-items: center;
+  }
+
+  .desktopLanguageSwitcher {
+    display: none;
+  }
+
+  /* Вторая строка: навигация */
+
   .nav {
-    gap: 24px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
   }
 
   .nav > a {
@@ -385,8 +416,8 @@
 
 .networkLogo {
   display: block;
-  width: 260px;
-  height: 80px;
+   width: 320px;
+  height: 100px;
   object-fit: contain;
   flex-shrink: 0;
 }

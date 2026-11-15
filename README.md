@@ -1,76 +1,120 @@
-# Brooklyn Bridge
+# Brooklyn Business Club
 
-A business networking community website.
+A bilingual business networking community website connecting entrepreneurs, business owners, and professionals through networking, collaboration, and meaningful business relationships.
 
-Brooklyn Bridge is a community of entrepreneurs built around meaningful connections, professional networking, experience sharing, and collaboration.
-
-This project is a responsive multi-page website designed to introduce the community, present its activities, and guide prospective members through the joining process.
+Brooklyn Business Club is a modern, responsive website designed to introduce the club, showcase its activities, provide membership information, and connect visitors with the community.
 
 ## Overview
 
-The website provides information about the community, its values, meeting formats, and membership guidelines.
+The website provides information about the club, its activities, membership process, contact information, and community policies.
 
 ### Main Features
 
-- **Community introduction** — an overview of the Brooklyn Bridge community.
-- **About page** — information about the club, its activities, and meeting formats.
-- **Membership page** — joining process, membership requirements, and community guidelines.
-- **Responsive design** — layouts adapted for desktop, tablet, and mobile devices.
-- **Social integration** — links to the community's Facebook group.
-- **Reusable components** — shared site header and footer.
-- **CSS Modules** — locally scoped styles for pages and components.
+- **Homepage** — introduces Brooklyn Business Club, its mission, and networking opportunities.
+- **About page** — presents the club, its activities, and networking formats.
+- **Membership page** — explains the joining process, membership expectations, and club rules.
+- **Contact page** — provides contact information, social media links, and an interactive contact form.
+- **Privacy Policy** — explains personal information handling and privacy practices.
+- **Terms & Conditions** — defines website usage terms and conditions.
+- **Cookie Policy** — describes cookie usage and third-party technologies.
+- **Community Guidelines** — establishes standards for respectful communication, professional networking, privacy, and participation.
+- **Bilingual interface** — supports English and Russian languages.
+- **Responsive design** — optimized for desktop, tablet, and mobile devices.
+- **SEO support** — includes page metadata, Open Graph information, robots.txt, and XML sitemap.
+- **Social integration** — links to Facebook, Telegram, and WhatsApp.
+- **Reusable components** — shared site header, footer, and contact form.
 
-## Pages
+## Website Pages
 
 | Route | Description |
 |---|---|
-| `/` | Homepage introducing the community |
-| `/about` | About the club and its activities |
-| `/join` | Membership process and community guidelines |
+| `/` | English homepage |
+| `/ru` | Russian homepage |
+| `/about` | About the club |
+| `/join` | Membership information |
+| `/contact` | Contact information and contact form |
+| `/privacy-policy` | Privacy Policy |
+| `/terms-and-conditions` | Terms & Conditions |
+| `/cookie-policy` | Cookie Policy |
+| `/community-guidelines` | Community Guidelines |
 
-## Tech Stack
+All pages are available in English and Russian. Russian routes use the `/ru` prefix.
 
-- [Next.js](https://nextjs.org/) — React framework
-- [React](https://react.dev/) — UI library
-- [TypeScript](https://www.typescriptlang.org/) — static typing
-- CSS Modules — component-level styling
-- npm — package management
+## Technology Stack
+
+### Frontend
+- [Next.js](https://nextjs.org/) — React framework and application routing.
+- [React](https://react.dev/) — component-based user interface.
+- [TypeScript](https://www.typescriptlang.org/) — static typing.
+- CSS Modules — locally scoped component and page styling.
+
+### Internationalization
+- [next-intl](https://next-intl.dev/) — internationalization, translations, and locale-aware navigation.
+- JSON translation files — English and Russian language content.
+
+### Forms and Integrations
+- [Formspree](https://formspree.io/) — contact form submission and processing.
+- Facebook — community group integration.
+- Telegram and WhatsApp — direct communication links.
+
+### Build and Deployment
+- [Vite](https://vite.dev/) — development and build tooling.
+- [Vinext](https://github.com/cloudflare/vinext) — Next.js-compatible application tooling.
+- [Cloudflare Workers](https://developers.cloudflare.com/workers/) — deployment infrastructure.
+- npm — package management.
+
+### Code Quality
+- ESLint — code quality and linting.
+- TypeScript — static type checking.
 
 ## Project Structure
 
-
 business-contacts-club/
+│
 ├── app/
-│   ├── about/
+│   ├── [locale]/
+│   │   ├── about/
+│   │   ├── community-guidelines/
+│   │   ├── contact/
+│   │   ├── cookie-policy/
+│   │   ├── join/
+│   │   ├── privacy-policy/
+│   │   ├── terms-and-conditions/
+│   │   ├── layout.tsx
 │   │   ├── page.tsx
 │   │   └── page.module.css
-│   ├── join/
-│   │   ├── page.tsx
-│   │   └── page.module.css
+│   │
 │   ├── globals.css
-│   ├── layout.tsx
-│   ├── page.tsx
-│   └── page.module.css
+│   ├── robots.ts
+│   └── sitemap.ts
 │
 ├── components/
-│   ├── site-header/
-│   │   ├── site-header.tsx
-│   │   └── site-header.module.css
-│   └── site-footer/
-│       ├── site-footer.tsx
-│       └── siteFooter.module.css
+│   ├── contact-form/
+│   ├── site-footer/
+│   └── site-header/
+│
+├── i18n/
+│   ├── navigation.ts
+│   ├── request.ts
+│   └── routing.ts
+│
+├── messages/
+│   ├── en.json
+│   └── ru.json
 │
 ├── public/
-│   ├── logo-bridge3.png
-│   ├── bridge.webp
-│   └── friends.webp
+│   └── Static images, logos, and other assets
 │
-├── .env.example
-├── .gitignore
+├── cloudflare.config.ts
+├── eslint.config.mjs
+├── next.config.ts
+├── vite.config.ts
+├── proxy.ts
 ├── package.json
 ├── package-lock.json
-├── next.config.ts
 ├── tsconfig.json
+├── .env.example
+├── .gitignore
 └── README.md
 
 
@@ -78,17 +122,13 @@ business-contacts-club/
 
 ### Prerequisites
 
-Make sure you have installed:
 - Node.js
 - npm
 
 ### Installation
 
 Clone the repository:
-
-
 git clone <repository-url>
-
 
 Navigate to the project directory:
 cd business-contacts-club
@@ -96,63 +136,103 @@ cd business-contacts-club
 Install dependencies:
 npm install
 
+### Environment Variables
 
-### Run Locally
-
-Start the development server:
-npm run dev
-
-
-Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-If port `3000` is already in use, Next.js may start the application on another available port. Check the terminal output for the correct address.
-
-## Available Scripts
-
-| Command | Description |
-|---|---|
-| `npm run dev` | Starts the development server |
-| `npm run build` | Creates a production build |
-| `npm run start` | Starts the production server |
-
-## Environment Variables
-
-The project can use an environment variable to configure the Facebook group URL.
-
-Create a `.env.local` file in the project root:
+Create a `.env.local` file in the project root.
 NEXT_PUBLIC_FACEBOOK_GROUP_URL=https://www.facebook.com/groups/1549833390202202
 
-
-The application also contains a fallback Facebook URL, so this variable is optional when the default group address is used.
+The Facebook group URL is optional because the application includes a fallback URL.
 
 Do not commit `.env.local` or other files containing private configuration values.
 
+## Available Scripts
+
+### Next.js
+
+| Command | Description |
+|---|---|
+| `npm run dev` | Starts the Next.js development server |
+| `npm run build` | Creates a Next.js production build |
+| `npm run start` | Starts the Next.js production server |
+| `npm run lint` | Runs ESLint |
+
+### Vite / Vinext / Cloudflare
+
+| Command | Description |
+|---|---|
+| `npm run dev:vinext` | Starts the Vite development server on port 3001 |
+| `npm run build:vinext` | Builds the application using Vite and Vinext |
+| `npm run start:vinext` | Starts the Vite preview server |
+| `npm run deploy:vinext` | Deploys the application using Vinext Cloudflare tooling |
+
+The Next.js and Vinext workflows are separate execution and deployment paths.
+
+## Internationalization
+
+The website supports two languages:
+
+- English (`en`) — default language.
+- Russian (`ru`) — secondary language.
+
+Language configuration is maintained in:
+
+- `i18n/routing.ts`
+- `i18n/request.ts`
+- `i18n/navigation.ts`
+
+Translation content is stored in:
+
+- `messages/en.json`
+- `messages/ru.json`
+
+The website uses locale-aware navigation and language switching.
+
 ## Styling and Design
 
-The visual identity of Brooklyn Bridge is based on a refined, professional aesthetic.
+The visual identity of Brooklyn Business Club is based on a refined, professional aesthetic.
 
 Key design elements include:
 
-- Deep navy and charcoal backgrounds
-- Warm ivory typography
-- Gold accent colors
-- Elegant serif and sans-serif typography
-- Photography inspired by the Brooklyn Bridge and business community events
+- Deep navy and charcoal backgrounds.
+- Warm ivory typography.
+- Gold accent colors.
+- Elegant typography and carefully balanced layouts.
+- Photography inspired by Brooklyn and professional networking.
+- Responsive layouts and mobile-friendly navigation.
+- Subtle animations and interactive visual elements.
 
-The project uses CSS Modules to keep page and component styles isolated and maintainable.
+CSS Modules are used to isolate component and page styles.
 
-Global styles and shared design variables are defined in `app/globals.css`.
+Global styles, typography, and shared design variables are defined in `app/globals.css`.
 
-## Development Notes
+## SEO and Website Metadata
 
-- Page-specific styles should remain in their corresponding CSS Modules.
-- Shared interface elements belong in the `components` directory.
-- Public images and other static assets are stored in `public`.
-- The `.next` directory is generated automatically by Next.js and should not be edited manually.
-- Run a production build before deploying changes.
+The website includes:
+
+- Page-specific metadata and descriptions.
+- Open Graph metadata.
+- Canonical URLs.
+- Locale-aware metadata.
+- `robots.txt` configuration.
+- XML sitemap generation.
+
+SEO configuration is maintained in individual page metadata functions, `app/robots.ts`, and `app/sitemap.ts`.
+
+## Development Guidelines
+
+- Keep page-specific styling in the corresponding CSS Modules.
+- Place reusable interface components in the `components` directory.
+- Keep translation content in the appropriate JSON files.
+- Use locale-aware navigation from `i18n/navigation.ts`.
+- Store static images, logos, and other assets in `public`.
+- Maintain responsive layouts across desktop, tablet, and mobile.
+- Keep website branding consistent across pages, metadata, and documentation.
+- Update the README whenever new pages, features, technologies, or deployment configurations are introduced.
+- Run ESLint and a production build before deploying changes.
+- Do not manually modify generated build files or the `.next` directory.
 
 ## License
 
-This project is currently maintained as a portfolio and community website.
+This project is maintained as the website of Brooklyn Business Club.
 
 No open-source license has been specified.

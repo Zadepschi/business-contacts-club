@@ -4,7 +4,6 @@ import { NextIntlClientProvider } from "next-intl";
 import {
   getMessages,
   getTranslations,
-  setRequestLocale,
 } from "next-intl/server";
 
 import { routing } from "@/i18n/routing";
@@ -39,17 +38,17 @@ export async function generateMetadata({
   return {
     metadataBase: new URL("https://brooklynbusiness.club"),
 
-    title: {
-      default: t("home.title"),
-      template: "%s | Brooklyn Bridge",
-    },
+   title: {
+  default: t("home.title"),
+  template: "%s",
+},
 
     description: t("home.description"),
 
     openGraph: {
       type: "website",
       locale: locale === "ru" ? "ru_RU" : "en_US",
-      siteName: "Brooklyn Bridge",
+      siteName: "Brooklyn Business Club",
     },
 
     robots: {
@@ -68,8 +67,6 @@ export default async function RootLayout({
   if (!routing.locales.includes(locale as "en" | "ru")) {
     notFound();
   }
-
-  setRequestLocale(locale);
 
   const messages = await getMessages();
 

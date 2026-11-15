@@ -36,6 +36,7 @@ export async function SiteFooter() {
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.main}>
+          {/* BRAND */}
           <div className={styles.brand}>
             <Link
               href="/"
@@ -49,15 +50,17 @@ export async function SiteFooter() {
                 height={84}
                 className={styles.logo}
               />
+
               <span className={styles.divider} />
+
               <Image
-  src="/BrooklynClub.png"
-  alt="Brooklyn Bridge Business Networking Club"
-  width={260}
-  height={80}
-  priority
-  className={styles.networkLogo}
-/>
+                src="/Brooklyn.png"
+                alt="Brooklyn Business Club Networking"
+                width={260}
+                height={80}
+                priority
+                className={styles.networkLogo}
+              />
             </Link>
 
             <p className={styles.description}>
@@ -65,36 +68,80 @@ export async function SiteFooter() {
             </p>
           </div>
 
+          {/* NAVIGATION */}
           <div className={styles.column}>
             <h3 className={styles.heading}>
               {t("navigation")}
             </h3>
-            <Link href="/">{header("home")}</Link>
-            <Link href="/about">{header("about")}</Link>
-            <Link href="/join">{header("join")}</Link>
-            <Link href="/contact">{header("contact")}</Link>
+
+            <Link href="/">
+              {header("home")}
+            </Link>
+
+            <Link href="/about">
+              {header("about")}
+            </Link>
+
+            <Link href="/join">
+              {header("join")}
+            </Link>
+
+            <Link href="/contact">
+              {header("contact")}
+            </Link>
           </div>
 
+          {/* COMMUNITY */}
           <div className={styles.column}>
             <h3 className={styles.heading}>
               {t("community")}
             </h3>
+
             <p>{t("tagline")}</p>
+
             <a
               href={facebookUrl}
               target="_blank"
               rel="noopener noreferrer"
               className={styles.facebook}
             >
-              {t("facebook")} <ArrowUpRight />
+              {t("facebook")}
+              <ArrowUpRight />
             </a>
           </div>
+
+         <div className={`${styles.column} ${styles.legalColumn}`}>
+  <h3 className={styles.heading}>
+    {t("legal")}
+  </h3>
+
+  <div className={styles.legalLinks}>
+    <Link href="/terms-and-conditions">
+      {t("terms")}
+    </Link>
+
+    <Link href="/privacy-policy">
+      {t("privacyPolicy")}
+    </Link>
+
+    <Link href="/cookie-policy">
+      {t("cookiePolicy")}
+    </Link>
+
+    <Link href="/community-guidelines">
+      {t("communityGuidelines")}
+    </Link>
+  </div>
+</div>
         </div>
 
+        {/* BOTTOM */}
         <div className={styles.bottom}>
           <span>
-            © {currentYear} Brooklyn Bridge. {t("copyright")}
+            © {currentYear} Brooklyn Business Club.{" "}
+            {t("copyright")}
           </span>
+
           <span className={styles.tagline}>
             {t("bottomTagline")}
           </span>

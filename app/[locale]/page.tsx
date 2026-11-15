@@ -86,7 +86,7 @@ export async function generateMetadata({
 
     openGraph: {
       type: "website",
-      siteName: "Brooklyn Bridge",
+      siteName: "Brooklyn Business Club",
       title,
       description,
       locale: locale === "ru" ? "ru_RU" : "en_US",

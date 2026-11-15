@@ -50,7 +50,7 @@ export function SiteHeader() {
             <span className={styles.divider} />
 
 <Image
-  src="/BrooklynClub.png"
+  src="/Brooklyn.png"
   alt="Brooklyn Bridge Business Networking Club"
   width={260}
   height={80}
