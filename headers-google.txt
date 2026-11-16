@@ -1,0 +1,13 @@
+HTTP/1.1 200 OK
+Date: Sun, 15 Nov 2026 12:34:56 GMT
+Content-Type: application/xml
+Content-Length: 5171
+Connection: keep-alive
+Cache-Control: public, max-age=0, must-revalidate
+Vary: RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch, Next-Url, X-Vinext-Interception-Context, X-Vinext-Interception-Id, X-Vinext-Mounted-Slots, X-Vinext-Rsc-Render-Mode, X-Vinext-Rsc-State-Fingerprint
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=W6hJGvI5WtYU55J3fYkUYXq%2B0FBfetzFhJ7NmypiID%2BMZH%2ByucVHhP7RvUm3nNyKoknNK6%2FSeQhML3RC7qjM2uGUz0TJq%2F8iQaxnVv68uDnbm35RmlPShi5nC%2BmtakTaVVyrEP3I5Nk%3D"}]}
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Server: cloudflare
+CF-RAY: a5ae4afc1d59ee82-MXP
+alt-svc: h3=":443"; ma=86400
+

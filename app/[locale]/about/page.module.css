@@ -135,7 +135,7 @@
   flex: 0 0 auto;
   color: #bd9454;
   font-family: Georgia, serif;
-  font-size: 38px;
+  font-size: 28px;
   font-weight: 700;
   line-height: 0.8;
 }
@@ -146,7 +146,7 @@
   margin-left: 4px;
   color: #bd9454;
   font-family: Georgia, serif;
-  font-size: 38px;
+  font-size: 28px;
   font-weight: 700;
   line-height: 1;
   vertical-align: baseline;
@@ -286,11 +286,14 @@
   }
 
   .noteMark {
-    font-size: 38px;
+    font-size: 28px;
   }
 
-  .closingQuote {
-    font-size: 38px;
+    .closingQuote {
+    font-size: 28px;
+    display: inline-block;
+    margin-top: -10px;
+    vertical-align: bottom;
   }
   .noteBandInner p {
     font-size: 17px;
